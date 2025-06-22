@@ -1,0 +1,20 @@
+{
+    "name": "Nathan Aronson",
+    "short_name": "Nathan Aronson",
+    "description": "Personal website of Nathan Aronson - Computer Science student at UPenn",
+    "icons": [
+        {
+            "src": "src/assets/penn.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "src/assets/penn.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#1a1a1a",
+    "background_color": "#1a1a1a",
+    "display": "standalone"
+} 
