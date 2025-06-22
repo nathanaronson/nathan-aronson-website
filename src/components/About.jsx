@@ -36,7 +36,7 @@ const About = () => {
             I study computer science at the University of Pennsylvania School of Engineering and Applied Science.
           </p>
           <p>
-            I have a <strong>strong algorithmic background</strong> and enjoy solving complex problems. I chase <strong>hard problems</strong>, and in college I push myself <span className="underline">as deeply as possible</span> into almost every corner of computer science.
+            I have a <strong>strong algorithmic background</strong> and chase <strong>hard problems</strong>. In college, I push myself <span className="underline">as deeply as possible</span> into almost every corner of computer science.
           </p>
           <p>
             I've worked on various projects spanning different domains, from robotics to mobile development. Currently, my interests lie in low-latency programming, embedded systems, and machine learning.

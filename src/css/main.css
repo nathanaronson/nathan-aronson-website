@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     opacity: 0;
     transform: translateX(-100px);
-    animation: slideInLeft 1.2s ease forwards 2.5s;
+    animation: slideInLeft 1.2s ease forwards 4.5s;
 }
 
 @keyframes slideInLeft {
@@ -227,10 +227,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4.5rem;
     color: #ffffff;
     /* Initial state for animation */
-    opacity: 0;
+    opacity: 1;
     /* Less bold - using regular weight instead of bold */
     font-weight: 400;
-    animation: fadeIn 1s ease forwards 1.2s;
     position: absolute;
     top: 5rem;
     left: 0;
@@ -252,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Cursor animation for typing effect */
 .cursor {
-    animation: blink 1s infinite;
+    animation: blink 0.8s infinite;
 }
 
 @keyframes blink {
@@ -270,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1.5rem;
     opacity: 0;
     transform: translateX(100px);
-    animation: slideInRight 1.2s ease forwards 2.8s;
+    animation: slideInRight 1.2s ease forwards 4.8s;
     margin-top: 4rem;
 }
 
@@ -309,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     opacity: 0;
-    animation: fadeIn 1s ease forwards 2.2s;
+    animation: fadeIn 1s ease forwards 4.2s;
     cursor: pointer;
 }
 
@@ -431,7 +430,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .experiences-icon {
     position: absolute;
-    left: -6rem;
+    left: -5.75rem;
     top: -0.5rem;
     width: 120px;
     height: 120px;

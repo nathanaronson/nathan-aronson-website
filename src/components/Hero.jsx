@@ -39,22 +39,25 @@ const Hero = () => {
           clearInterval(timer)
           if (onComplete) onComplete()
         }
-      }, 80) // Faster typing speed
+      }, 180) // Even slower typing speed
     }
 
     // Start typing animations with shorter delays
     setTimeout(() => {
-      typeWriter('Hello,', setGreeting1, () => {
+      typeWriter('Hey,', setGreeting1, () => {
         setTimeout(() => {
           typeWriter('I\'m ', setGreeting2, () => {
             setTimeout(() => {
               typeWriter('Nathan', setGradientText, () => {
-                setIsTypingComplete(true)
-                setCurrentTypingPhase(-1) // No more typing
+                // Keep cursor blinking for a couple seconds after "Nathan" is typed
+                setTimeout(() => {
+                  setIsTypingComplete(true)
+                  setCurrentTypingPhase(-1) // No more typing
+                }, 1600) // 1.6 seconds = about 2 cursor blinks
               }, 2)
             }, 150) // Shorter delay
           }, 1)
-        }, 200) // Shorter delay
+        }, 1200) // Even longer delay between Hey and I'm Nathan
       }, 0)
     }, 300) // Shorter initial delay
   }, [])
@@ -88,7 +91,7 @@ const Hero = () => {
               <h2 className={isTypingComplete ? 'typing-complete' : ''}>
                 {greeting2}
                 <span className="gradient-text">{gradientText}</span>
-                {currentTypingPhase === 2 && <span className="cursor">|</span>}
+                {(currentTypingPhase === 1 || currentTypingPhase === 2) && <span className="cursor">|</span>}
               </h2>
             </div>
             
