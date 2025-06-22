@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import headshotImage from '../assets/headshot.png'
 
 const Hero = () => {
   const [greeting1, setGreeting1] = useState('')
@@ -74,7 +75,7 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-left">
             <div className="profile-image">
-              <img src="/src/assets/headshot.png" alt="Nathan Aronson" />
+              <img src={headshotImage} alt="Nathan Aronson" />
             </div>
           </div>
           

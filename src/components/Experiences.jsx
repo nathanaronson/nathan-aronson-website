@@ -1,4 +1,9 @@
 import React, { useEffect, useRef } from 'react'
+import burnsImage from '../assets/burns.png'
+import pennImage from '../assets/penn.png'
+import perImage from '../assets/per.png'
+import codelmImage from '../assets/codelm.png'
+import firstImage from '../assets/first.png'
 
 const Experiences = () => {
   const experiencesRef = useRef(null)
@@ -8,7 +13,7 @@ const Experiences = () => {
       id: 1,
       title: 'Software Engineer Intern @ Burns Engineering',
       date: 'May 2025 - Present',
-      image: '/src/assets/burns.png',
+      image: burnsImage,
       alt: 'Burns Engineering',
       items: [
         'Railroad & Transit Team',
@@ -20,7 +25,7 @@ const Experiences = () => {
       id: 2,
       title: 'Teaching Assistant @ UPenn',
       date: 'Jan 2025 - Present',
-      image: '/src/assets/penn.png',
+      image: pennImage,
       alt: 'University of Pennsylvania',
       items: [
         'CIS 1200: Programming Languages and Techniques I',
@@ -32,7 +37,7 @@ const Experiences = () => {
       id: 3,
       title: 'Hardware Engineer @ Penn Electric Racing',
       date: 'Sep 2024 - Present',
-      image: '/src/assets/per.png',
+      image: perImage,
       alt: 'Penn Electric Racing',
       items: [
         'Altium Designer, LTSpice',
@@ -44,7 +49,7 @@ const Experiences = () => {
       id: 4,
       title: 'Director @ CodeLM',
       date: 'Sep 2020 - June 2024',
-      image: '/src/assets/codelm.png',
+      image: codelmImage,
       alt: 'CodeLM',
       items: [
         'C++, Java, Python',
@@ -55,7 +60,7 @@ const Experiences = () => {
       id: 5,
       title: 'Captain @ FRC Team 1712',
       date: 'Sep 2021 - June 2024',
-      image: '/src/assets/first.png',
+      image: firstImage,
       alt: 'FRC Team 1712',
       items: [
         'Java',
