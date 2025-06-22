@@ -1,0 +1,48 @@
+import React from 'react'
+
+const Footer = () => {
+  const socialLinks = [
+    {
+      href: 'https://linkedin.com/in/nathanaronson',
+      label: 'LinkedIn'
+    },
+    {
+      href: 'https://github.com/nathanaronson',
+      label: 'GitHub'
+    },
+    {
+      href: 'mailto:narons@seas.upenn.edu',
+      label: 'Email'
+    }
+  ]
+
+  return (
+    <footer id="connect" className="footer">
+      <div className="container">
+        <div className="footer-content">
+          <div className="footer-left">
+            <h3>Connect With Me...</h3>
+            <div className="footer-socials">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="footer-social-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className="footer-right">
+            <p>&copy; 2025 Nathan Aronson</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer 

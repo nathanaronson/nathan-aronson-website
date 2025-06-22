@@ -1,222 +1,133 @@
 # Nathan Aronson - Personal Website
 
-A modern, responsive single-page personal website built with HTML, CSS, and JavaScript. Features a high-contrast dark theme with elegant typography and geometric background elements.
+A modern, responsive personal website built with React, featuring a dark theme with geometric background elements and smooth animations.
 
-**Live Site**: [https://www.seas.upenn.edu/~narons/](https://www.seas.upenn.edu/~narons/)
+## Features
 
-## 🚀 Features
+- **Modern React Architecture**: Built with React 18 and Vite for optimal performance
+- **Responsive Design**: Optimized for both desktop and mobile devices
+- **Dark Theme**: Elegant dark design with layered geometric backgrounds
+- **Smooth Animations**: Typing effects, slide-in animations, and interactive elements
+- **Mobile-First**: Hamburger menu and touch-friendly interactions
+- **Performance Optimized**: Fast loading with modern build tools
 
-- **Responsive Design**: Fully responsive layout that works on desktop, tablet, and mobile devices
-- **Modern Dark Theme**: High-contrast dark color scheme with elegant typography
-- **Geometric Backgrounds**: Subtle geometric arcs and lines for visual interest
-- **Smooth Scrolling**: Smooth navigation between sections
-- **Interactive Elements**: Hover effects, animations, and mobile navigation
-- **Accessibility**: Semantic HTML and accessibility best practices
-- **Performance Optimized**: Lightweight and fast loading
+## Sections
 
-## 📁 File Structure
+- **Navigation**: Smart navbar that hides on scroll down, shows on scroll up
+- **Hero**: Animated greeting with typing effect and profile image
+- **About**: Personal introduction and background
+- **Timeline**: Professional experience with animated timeline
+- **Projects**: Portfolio of projects with hover effects
+- **Footer**: Social links and contact information
 
-```
-website/
-├── index.html          # Main HTML structure
-├── src/
-│   ├── css/
-│   │   └── main.css    # CSS styling and responsive design
-│   ├── js/
-│   │   └── main.js     # JavaScript functionality
-│   └── assets/         # Images and media files
-│       ├── headshot.jpeg
-│       ├── burns.png
-│       ├── penn.png
-│       └── per.png
-├── package.json        # Project configuration
-├── README.md           # This file
-├── LICENSE             # MIT License
-└── .gitignore          # Git ignore rules
-```
+## Tech Stack
 
-## 🎨 Design Specifications
+- **React 18** - Modern React with hooks
+- **Vite** - Fast build tool and development server
+- **CSS3** - Custom styling with animations and responsive design
+- **Font Awesome** - Icon library
+- **Google Fonts** - Typography (Playfair Display, Source Serif Pro)
 
-### Color Scheme
-- **Background**: #181818 (Dark gray)
-- **Primary Text**: #ffffff (White)
-- **Secondary Text**: #cccccc (Light gray)
-- **Accent**: #888888 (Medium gray)
-- **Cards**: #222222 (Dark card background)
-- **Footer**: #111111 (Darker footer background)
-
-### Typography
-- **Headings**: Playfair Display (Serif)
-- **Body Text**: Source Serif Pro (Serif)
-- **Font Weights**: 400 (Regular), 600 (Semi-bold), 700 (Bold)
-
-## 🛠️ Setup Instructions
+## Getting Started
 
 ### Prerequisites
-- Node.js (version 14 or higher) - Optional, for development server
-- npm or yarn - Optional, for development dependencies
 
-### Quick Start
-1. **Clone or Download**: Download all files to your local directory
-2. **Open in Browser**: Simply open `index.html` in your web browser
+- Node.js (version 16 or higher)
+- npm or yarn
 
-### Development Setup
-1. **Install Dependencies** (Optional):
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd website
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. **Start Development Server**:
+3. Start the development server:
    ```bash
    npm run dev
    ```
-   The website will be available at `http://localhost:8000`
+
+4. Open your browser and navigate to `http://localhost:3000`
 
 ### Available Scripts
-- `npm start` - Start production server
-- `npm run dev` - Start development server with live reload
-- `npm run build` - Build for deployment
-- `npm run deploy` - Prepare for deployment
 
-## 📱 Sections
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
 
-### 1. Navigation Bar
-- Fixed top navigation with Nathan's name on the left
-- Navigation links on the right (home, about, timeline, projects, socials)
-- Mobile hamburger menu for responsive design
+## Project Structure
 
-### 2. Hero Section
-- Large circular profile image on the left
-- Greeting text and social icons on the right
-- Animated scroll indicator
-- Geometric background elements
+```
+src/
+├── components/          # React components
+│   ├── Navigation.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Timeline.jsx
+│   ├── Projects.jsx
+│   └── Footer.jsx
+├── css/
+│   └── main.css        # Main stylesheet
+├── assets/             # Images and static assets
+├── App.jsx             # Main App component
+└── main.jsx            # Application entry point
+```
 
-### 3. About Section
-- Large "about." heading
-- Subheading about education
-- Two paragraphs with styled text (bold, italic)
-- Geometric background overlays
+## Customization
 
-### 4. Timeline Section
-- Vertical timeline with company icons
-- Work experience entries with dates and details
-- Connected timeline with dots and lines
+### Content Updates
 
-### 5. Projects Section
-- Project cards with icons and descriptions
-- Technology stack information
-- Bullet points for project details
+- **Personal Information**: Update content in individual component files
+- **Images**: Replace images in `src/assets/` directory
+- **Colors**: Modify CSS variables in `src/css/main.css`
+- **Animations**: Adjust timing and effects in CSS animations
 
-### 6. Footer
-- Dark background with social icons
-- Copyright information
-- "Let's Connect..." heading
+### Styling
 
-## 🎯 Customization
+The website uses a modular CSS approach with:
+- Responsive grid layouts
+- CSS animations and transitions
+- Mobile-first media queries
+- Geometric background patterns
 
-### Updating Content
-1. **Profile Image**: Replace `src/assets/headshot.jpeg` with your actual image
-2. **Personal Information**: Update the text content in `index.html` with your information
-3. **Social Links**: Update the href attributes in social icon links
-4. **Projects**: Modify the project entries with your own projects
-5. **Timeline**: Update work experience and education entries
-
-### Styling Changes
-1. **Colors**: Modify the CSS custom properties in `src/css/main.css`
-2. **Fonts**: Change the Google Fonts import in `index.html`
-3. **Layout**: Adjust grid layouts and spacing in `src/css/main.css`
-
-### Adding New Sections
-1. Add new section HTML in `index.html`
-2. Add corresponding CSS styles in `src/css/main.css`
-3. Update navigation menu if needed
-4. Add any JavaScript functionality in `src/js/main.js`
-
-## 🔧 Browser Support
+## Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 📱 Responsive Breakpoints
+## Performance
 
-- **Desktop**: 1200px and above
-- **Tablet**: 768px - 1199px
-- **Mobile**: Below 768px
-- **Small Mobile**: Below 480px
+- Optimized bundle size with Vite
+- Lazy loading for images
+- Efficient CSS animations
+- Mobile-optimized assets
 
-## 🎨 Geometric Background Elements
+## Deployment
 
-The website features subtle geometric elements:
-- **Arcs**: Semi-transparent curved borders
-- **Lines**: Gradient lines with varying angles
-- **Positioning**: Strategically placed for visual balance
-- **Animation**: Subtle parallax effect on scroll
+The application can be deployed to any static hosting service:
 
-## 🚀 Performance Features
+1. Build the project:
+   ```bash
+   npm run build
+   ```
 
-- **Optimized Images**: Use WebP format when possible
-- **Minimal Dependencies**: Only Font Awesome for icons
-- **Efficient CSS**: Optimized selectors and properties
-- **Smooth Animations**: Hardware-accelerated transforms
+2. Deploy the `dist` folder to your hosting service
 
-## 📝 Accessibility Features
+## License
 
-- **Semantic HTML**: Proper heading hierarchy and landmarks
-- **Keyboard Navigation**: Full keyboard accessibility
-- **Screen Reader Support**: Proper alt text and ARIA labels
-- **Color Contrast**: High contrast ratios for readability
-- **Focus Indicators**: Visible focus states for interactive elements
+MIT License - see LICENSE file for details
 
-## 🚀 Deployment
+## Contact
 
-### Penn SEAS Hosting
-
-This website is hosted on the University of Pennsylvania School of Engineering and Applied Science (SEAS) web server at [https://www.seas.upenn.edu/~narons/](https://www.seas.upenn.edu/~narons/).
-
-### Alternative Hosting Options
-
-1. **GitHub Pages**:
-   - Push your code to a GitHub repository
-   - Go to Settings > Pages
-   - Select source branch (usually `main`)
-   - Your site will be available at `https://username.github.io/repository-name`
-
-2. **Netlify**:
-   - Drag and drop the entire project folder to Netlify
-   - Or connect your GitHub repository for automatic deployments
-
-3. **Vercel**:
-   - Connect your GitHub repository
-   - Vercel will automatically deploy your site
-
-4. **Custom Domain**:
-   - Update the domain in your hosting provider settings
-   - Update meta tags in `index.html` if needed
-
-## 🔄 Future Enhancements
-
-Potential improvements for the website:
-- [ ] Add a blog section
-- [ ] Implement a contact form
-- [ ] Add portfolio gallery
-- [ ] Include testimonials section
-- [ ] Add dark/light theme toggle
-- [ ] Implement lazy loading for images
-- [ ] Add more interactive animations
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-Feel free to submit issues, feature requests, or pull requests to improve this website.
-
----
-
-**Built with ❤️ for Nathan Aronson's personal brand**
-
-**Live Site**: [https://www.seas.upenn.edu/~narons/](https://www.seas.upenn.edu/~narons/) 
+Nathan Aronson
+- Email: narons@seas.upenn.edu
+- LinkedIn: [linkedin.com/in/nathanaronson](https://linkedin.com/in/nathanaronson)
+- GitHub: [github.com/nathanaronson](https://github.com/nathanaronson) 

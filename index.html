@@ -3,216 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nathan Aronson - Software Engineer and Developer Portfolio">
+    <meta name="author" content="Nathan Aronson">
     <title>Nathan Aronson</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="src/assets/penn.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="src/assets/penn.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/penn.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/penn.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/penn.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/penn.png">
+    <link rel="manifest" href="/site.webmanifest">
     
-    <link rel="stylesheet" href="src/css/main.css">
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <a href="#hero">Nathan Aronson</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#hero">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#timeline">timeline</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#footer">socials</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-left">
-                    <div class="profile-image">
-                        <img src="src/assets/headshot.jpeg" alt="Nathan Aronson">
-                    </div>
-                </div>
-                <div class="hero-right">
-                    <div class="greeting">
-                        <h1>Hey there,</h1>
-                        <h2>I'm <span class="gradient-text">Nathan</span>!</h2>
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://linkedin.com/in/nathanaronson" class="social-icon" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/nathanaronson" class="social-icon" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:narons@seas.upenn.edu" class="social-icon">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                    <div class="scroll-indicator">
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-heading">about.</h2>
-            <div class="about-content">
-                <p class="subheading">I'm a student at the University of Pennsylvania pursuing a BSE in Computer Science.</p>
-                <p>I chase <strong>hard problems</strong>. I'm a former competitive programmer, through which I learned to think thoroughly and critically. In college, I push myself into almost every corner of computer science, delving as deeply as possible into each one, to expose myself to the most interesting problems I can find.</p>
-                <p>I've <strong>managed</strong> development teams and <strong>lead</strong> countless projects, and I have a strong understanding for the entire software development lifecycle. Currently my interests lay in <em>embedded systems</em>, <em>low latency</em>, and <em>iOS development</em>.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Timeline Section -->
-    <section id="timeline" class="timeline">
-        <div class="container">
-            <h2 class="section-heading">timeline.</h2>
-            <p class="section-subheading">my journey so far...</p>
-            <div class="timeline-container">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <img src="src/assets/burns.png" alt="Burns Engineering">
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Software Engineer Intern @ Burns Engineering</h3>
-                        <p class="timeline-date">May 2025 - Present</p>
-                        <ul>
-                            <li>Railroad & Transit Team</li>
-                            <li>Rust, Python</li>
-                            <li>Architecting communication protocol, state machine, and OS-image of safety-critical embedded system.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <img src="src/assets/penn.png" alt="University of Pennsylvania">
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Teaching Assistant @ UPenn</h3>
-                        <p class="timeline-date">Jan 2025 - Present</p>
-                        <ul>
-                            <li>CIS 1200: Programming Languages and Techniques I</li>
-                            <li>OCaml, Java</li>
-                            <li>Lead weekly recitation, hold office hours, grade homeworks, answer questions on Ed Discussions.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <img src="src/assets/per.png" alt="Penn Electric Racing">
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Hardware Engineer @ Penn Electric Racing</h3>
-                        <p class="timeline-date">Sep 2024 - Present</p>
-                        <ul>
-                            <li>Altium Designer, LTSpice</li>
-                            <li>Created Accumulator Management System Hardware-in-the-Loop PCB.</li>
-                            <li>Designed Brake System Implausibility Device PCB.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-heading">projects.</h2>
-            <p class="section-subheading">check out some of my projects!</p>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <div class="project-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Apartment Rent Prediction and Classification</h3>
-                        <p class="project-tech">Python, Pandas, Sklearn, PyTorch, NumPy</p>
-                        <p class="project-description">Multilabel predictor of apartment rent prices of 100,000+ apartments in the United States.</p>
-                        <ul>
-                            <li>Modeled using Linear Regression, Gradient Boosting Regressor, Random Forest Regressor, and Neural Network (16 layers and 100 epochs).</li>
-                            <li>Achieved explained variance of 0.85 with Random Forest Regressor and Neural Network classification of 0.88.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Ultimate Tic-Tac-Toe & AI</h3>
-                        <p class="project-tech">Java, JSwing</p>
-                        <p class="project-description">Build Ultimate Tic-Tac-Toe from scratch following Model-View-Controller layout.</p>
-                        <ul>
-                            <li>Utilized inheritance and dynamic dispatch for board and tile moves; game history stored in dual-stack configration.</li>
-                            <li>Designed AI minimax algorithm with alpha-beta pruning and efficient heuristic capable of looking four moves into the future..</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-icon">
-                        <i class="fas fa-tint"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>WaterWatch</h3>
-                        <p class="project-tech">Swift, SwiftUI, WidgetKit</p>
-                        <p class="project-description">Developing hydration metric tracker and reminder application with custom UI interface.</p>
-                        <ul>
-                            <li>Implemented user authentication and metrics storage using Google Firebase; accurately calculated hydration needs by integrating location-based meteorological data through decoded JSON API responses.</li>
-                            <li>Create home-screen widget displaying daily water intake. Cached images using Kingfisher.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <h3>Let's Connect...</h3>
-                    <div class="footer-socials">
-                        <a href="https://linkedin.com/in/nathanaronson" class="footer-social-icon" target="_blank" rel="noopener noreferrer">
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/nathanaronson" class="footer-social-icon" target="_blank" rel="noopener noreferrer">
-                            GitHub
-                        </a>
-                        <a href="mailto:narons@seas.upenn.edu" class="footer-social-icon">
-                            Email
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <p>&copy; 2025 Nathan Aronson</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="src/js/main.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html> 
