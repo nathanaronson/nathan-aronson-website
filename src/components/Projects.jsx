@@ -1,7 +1,9 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const Projects = () => {
   const projectsRef = useRef(null)
+  const [hasShownMore, setHasShownMore] = useState(false)
+  const [isAnimating, setIsAnimating] = useState(false)
 
   const projectsData = [
     {
@@ -39,35 +41,60 @@ const Projects = () => {
         'Implemented user authentication and metrics storage using Google Firebase; accurately calculated hydration needs by integrating location-based meteorological data through decoded JSON API responses.',
         'Create home-screen widget displaying daily water intake. Cached images using Kingfisher.'
       ]
+    },
+    {
+      id: 4,
+      title: 'Thermahax',
+      role: 'Hardware Engineer & Embedded Systems Developer',
+      tech: 'Arduino, C++',
+      description: 'Temperature control system using DHT11 sensor to control relays and Peltier junctions for heating/cooling to manipulate nearby thermometer readings.',
+      icon: 'fas fa-thermometer-half',
+      items: [
+        'Designed dual NMOS/PMOS H-bridge configuration to control Peltier junctions for precise heating and cooling.',
+        'Implemented Arduino-based control system with DHT11 temperature sensor and relay modules to create a "temperature hacker" that can trick nearby thermometers.'
+      ]
+    },
+    {
+      id: 5,
+      title: 'Discord Bots',
+      role: 'Software Developer',
+      tech: 'Python, Discord.py',
+      description: 'Interactive Discord bots featuring Hangman and Blackjack games with real-time multiplayer functionality.',
+      icon: 'fas fa-robot',
+      items: [
+        'Developed Hangman bot with word categories, scoring system, and interactive game state management.',
+        'Created Blackjack bot with deck management, betting system, and multiplayer support using Discord.py library.'
+      ]
     }
   ]
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
-            // Add staggered animation delay
-            setTimeout(() => {
-              entry.target.style.opacity = '1'
-              entry.target.style.transform = 'translateY(0)'
-            }, index * 200)
-          }
-        })
-      },
-      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
-    )
+  const initialProjectsCount = 3
+  const displayedProjects = hasShownMore ? projectsData : projectsData.slice(0, initialProjectsCount)
 
+  const handleShowMore = () => {
+    setIsAnimating(true)
+    setHasShownMore(true)
+    
+    // Reset animation state after animation completes
+    setTimeout(() => {
+      setIsAnimating(false)
+    }, 1000)
+  }
+
+  useEffect(() => {
+    // Simple animation without intersection observer
     const projectItems = document.querySelectorAll('.project-item')
-    projectItems.forEach((item) => {
+    projectItems.forEach((item, index) => {
       item.style.opacity = '0'
       item.style.transform = 'translateY(30px)'
       item.style.transition = 'opacity 0.6s ease, transform 0.6s ease'
-      observer.observe(item)
+      
+      setTimeout(() => {
+        item.style.opacity = '1'
+        item.style.transform = 'translateY(0)'
+      }, index * 200)
     })
-
-    return () => observer.disconnect()
-  }, [])
+  }, [hasShownMore])
 
   return (
     <section id="projects" className="projects">
@@ -75,7 +102,7 @@ const Projects = () => {
         <h2 className="section-heading">projects.</h2>
         <p className="section-subheading">some of my work...</p>
         <div className="projects-list" ref={projectsRef}>
-          {projectsData.map((project) => (
+          {displayedProjects.map((project) => (
             <div key={project.id} className="project-item">
               <div className="project-icon">
                 <i className={project.icon}></i>
@@ -94,6 +121,19 @@ const Projects = () => {
             </div>
           ))}
         </div>
+        
+        {!hasShownMore && (
+          <div className="projects-toggle">
+            <button 
+              className="show-more-btn"
+              onClick={handleShowMore}
+              disabled={isAnimating}
+            >
+              <span>Show More Projects</span>
+              <i className="fas fa-chevron-down"></i>
+            </button>
+          </div>
+        )}
       </div>
     </section>
   )
