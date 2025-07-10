@@ -770,19 +770,54 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2.5rem;
     }
 
+    .experiences-container {
+        padding-left: 2rem;
+        position: relative;
+    }
+
     .experiences-container::before {
-        left: 1rem;
+        left: calc(45px - 1px);  /* Center line in 90px icon */
+        top: 1.5rem;
+        height: 1050px;  /* Slightly reduced height */
+        bottom: auto;
+        width: 2px;
     }
 
     .experiences-icon {
-        left: -1rem;
-        width: 80px;
-        height: 80px;
+        left: -2rem;
+        width: 90px;
+        height: 90px;
+        top: -0.5rem;  /* Move icon up */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .experiences-icon img {
         width: 70px;
         height: 70px;
+    }
+
+    .experiences-content {
+        padding: 1.25rem 0 1.5rem 3.5rem;  /* Increase left padding to move text right */
+        position: relative;
+        left: 0;
+    }
+
+    .experiences-content h3 {
+        font-size: 1.1rem;  /* Smaller heading */
+        margin-bottom: 0.25rem;
+    }
+
+    .experiences-date {
+        font-size: 0.85rem;  /* Smaller date */
+        margin-bottom: 0.5rem;
+    }
+
+    .experiences-content li {
+        font-size: 0.9rem;  /* Smaller list items */
+        margin-bottom: 0.35rem;
+        padding-left: 1.25rem;
     }
 
     .projects-grid {
@@ -909,6 +944,49 @@ h1, h2, h3, h4, h5, h6 {
 
     .project-icon i {
         font-size: 1.3rem;
+    }
+
+    .experiences-container {
+        padding-left: 2rem;
+    }
+
+    .experiences-container::before {
+        left: calc(40px - 1px);  /* Center line in 80px icon */
+        top: 1.5rem;
+        height: 950px;  /* Slightly reduced height for mobile */
+        bottom: auto;
+    }
+
+    .experiences-icon {
+        left: -2rem;
+        width: 80px;
+        height: 80px;
+        top: -0.5rem;  /* Keep consistent with tablet view */
+    }
+
+    .experiences-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .experiences-content {
+        padding: 1rem 0 1.25rem 3.25rem;  /* Slightly less padding for phones but still moved right */
+        left: 0;
+    }
+
+    .experiences-content h3 {
+        font-size: 1rem;  /* Even smaller heading for phones */
+    }
+
+    .experiences-date {
+        font-size: 0.8rem;  /* Smaller date */
+        margin-bottom: 0.5rem;
+    }
+
+    .experiences-content li {
+        font-size: 0.85rem;  /* Smaller list items */
+        margin-bottom: 0.35rem;
+        padding-left: 1rem;
     }
 
     /* Further reduce background complexity for very small screens */
