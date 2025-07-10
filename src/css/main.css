@@ -735,28 +735,34 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
     }
 
+    .hero {
+        padding: 100px 0 60px;  /* Increase top padding to move headshot down */
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 0.5rem;  /* Reduce gap between elements */
         text-align: center;
     }
 
     .profile-image {
         width: 300px;
         height: 300px;
+        margin-bottom: 0.5rem;  /* Reduce space below headshot */
     }
 
     .greeting {
-        height: 8rem;
+        height: 5.5rem;  /* Reduce greeting height */
+        margin-bottom: 0.25rem;  /* Minimal space after greeting */
     }
 
     .greeting h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem;  /* Make both h1 and h2 the same size */
         top: 0;
     }
 
     .greeting h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;  /* Make both h1 and h2 the same size */
         top: 3rem;
     }
 
@@ -819,22 +825,23 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .social-icons {
-        margin-top: 5rem;
+        margin-top: 0;  /* Remove top margin to bring icons closer */
+        gap: 2rem;  /* Increase gap slightly for larger icons */
     }
 
     .social-icon {
-        width: 55px;
-        height: 55px;
+        width: 65px;  /* Make icons even larger */
+        height: 65px;
     }
 
     .social-icon i {
-        font-size: 1.3rem;
+        font-size: 2.2rem;  /* Make icon content even larger */
     }
 }
 
 @media (max-width: 480px) {
     .hero {
-        padding: 100px 0 60px;
+        padding: 80px 0 40px;  /* Adjust padding for phones */
     }
 
     .experiences, .projects {
@@ -842,17 +849,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .greeting {
-        height: 6rem;
+        height: 5.5rem;
+        margin-bottom: 0.25rem;
     }
 
     .greeting h1 {
-        font-size: 2rem;
-        top: 0;
+        font-size: 2.5rem;
     }
 
     .greeting h2 {
         font-size: 2.5rem;
-        top: 2.5rem;
     }
 
     .section-heading {
@@ -860,21 +866,27 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .profile-image {
-        width: 250px;
+        width: 250px;  /* Even smaller for phones */
         height: 250px;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-content {
+        gap: 0.25rem;  /* Even smaller gap for phones */
     }
 
     .social-icons {
-        margin-top: 4rem;
+        margin-top: 0;
+        gap: 2rem;
     }
 
     .social-icon {
-        width: 50px;
-        height: 50px;
+        width: 65px;
+        height: 65px;
     }
 
     .social-icon i {
-        font-size: 1.2rem;
+        font-size: 2.2rem;
     }
 
     .projects-grid {
