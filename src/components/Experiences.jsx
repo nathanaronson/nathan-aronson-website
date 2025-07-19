@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import asteraImage from '../assets/astera.png'
 import burnsImage from '../assets/burns.png'
 import pennImage from '../assets/penn.png'
 import perImage from '../assets/per.png'
@@ -11,6 +12,18 @@ const Experiences = () => {
   const experiencesData = [
     {
       id: 1,
+      title: 'Infrastructure Lead @ Astera Holdings',
+      date: 'June 2025 - Present',
+      image: asteraImage,
+      alt: 'Astera Holdings',
+      items: [
+        'Rust, Python',
+        'Lead the infrastructure team to create low-latency Rust trading system.',
+        'Develop containerized websocket pipeline with real-time orderbook updates.'
+      ]
+    },
+    {
+      id: 2,
       title: 'Software Engineer Intern @ Burns Engineering',
       date: 'May 2025 - Present',
       image: burnsImage,
@@ -22,7 +35,7 @@ const Experiences = () => {
       ]
     },
     {
-      id: 2,
+      id: 3,
       title: 'Teaching Assistant @ UPenn',
       date: 'Jan 2025 - Present',
       image: pennImage,
@@ -34,19 +47,19 @@ const Experiences = () => {
       ]
     },
     {
-      id: 3,
-      title: 'Hardware Engineer @ Penn Electric Racing',
+      id: 4,
+      title: 'Software Developer @ Penn Electric Racing',
       date: 'Sep 2024 - Present',
       image: perImage,
       alt: 'Penn Electric Racing',
       items: [
-        'Altium Designer, LTSpice',
-        'Created Accumulator Management System Hardware-in-the-Loop PCB.',
-        'Designed Brake System Implausibility Device PCB.'
+        'Rust, Python, Altium Designer',
+        'Designed vehicle dynamics simulation.',
+        'Spearheaded Accumulator Management System Hardware-in-the-Loop PCB.',
       ]
     },
     {
-      id: 4,
+      id: 5,
       title: 'Director @ CodeLM',
       date: 'Sep 2020 - June 2024',
       image: codelmImage,
@@ -57,7 +70,7 @@ const Experiences = () => {
       ]
     },
     {
-      id: 5,
+      id: 6,
       title: 'Captain @ FRC Team 1712',
       date: 'Sep 2021 - June 2024',
       image: firstImage,
