@@ -39,7 +39,7 @@ const About = () => {
             I have a <strong>strong algorithmic background</strong> and chase <strong>hard problems</strong>. In college, I push myself <span className="underline">as deeply as possible</span> into almost every corner of computer science.
           </p>
           <p>
-            I manage a development teams and lead countless projects, and I have a strong understanding for the entire software development lifecycle. Currently, my interests lie in low-latency programming, distributed systems, and machine learning.
+            I manage a development team and lead multiple projects, and I have a strong understanding of the entire software development lifecycle. Currently, my interests lie in low-latency programming, distributed systems, and machine learning.
           </p>
         </div>
       </div>

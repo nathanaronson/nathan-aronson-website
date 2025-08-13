@@ -12,32 +12,33 @@ const Experiences = () => {
   const experiencesData = [
     {
       id: 1,
-      title: 'Infrastructure Lead @ Astera Holdings',
-      date: 'June 2025 - Present',
-      image: asteraImage,
-      alt: 'Astera Holdings',
-      items: [
-        'Rust, Python',
-        'Lead the infrastructure team to create low-latency Rust trading system.',
-        'Develop containerized websocket pipeline with real-time orderbook updates.'
-      ]
-    },
-    {
-      id: 2,
       title: 'Software Engineer Intern @ Burns Engineering',
-      date: 'May 2025 - Present',
+      date: 'Summer 2025',
       image: burnsImage,
       alt: 'Burns Engineering',
       items: [
         'Railroad & Transit Team',
-        'Rust, Python',
-        'Architecting communication protocol, state machine, and OS-image of safety-critical embedded system.'
+        'Python, Rust',
+        'Architected communication protocol, state machine, and OS-image of safety-critical embedded system.'
+      ]
+    },
+    {
+      id: 2,
+      title: 'Lead Quantitative Developer @ Astera Holdings',
+      date: 'Spring 2025 - Present',
+      image: asteraImage,
+      alt: 'Astera Holdings',
+      items: [
+        'Python, Rust',
+        'Lead development team to develop prediction-market trading engine.',
+        'Facilitate quantitative researchers with trade strategy executions.',
+        'Built cloud-deployed websocket data acquisition pipeline with real-time orderbook updates.',
       ]
     },
     {
       id: 3,
-      title: 'Teaching Assistant @ UPenn',
-      date: 'Jan 2025 - Present',
+      title: 'Teaching Assistant @ University of Pennsylvania',
+      date: 'Winter 2025 - Present',
       image: pennImage,
       alt: 'University of Pennsylvania',
       items: [
@@ -49,36 +50,36 @@ const Experiences = () => {
     {
       id: 4,
       title: 'Software Developer @ Penn Electric Racing',
-      date: 'Sep 2024 - Present',
+      date: 'Fall 2024 - Present',
       image: perImage,
       alt: 'Penn Electric Racing',
       items: [
-        'Rust, Python, Altium Designer',
+        'Python, Rust, C++, Altium Designer',
         'Designed vehicle dynamics simulation.',
         'Spearheaded Accumulator Management System Hardware-in-the-Loop PCB.',
       ]
     },
     {
       id: 5,
-      title: 'Director @ CodeLM',
-      date: 'Sep 2020 - June 2024',
-      image: codelmImage,
-      alt: 'CodeLM',
+      title: 'Captain @ FRC Team 1712',
+      date: 'Fall 2021 - Spring 2024',
+      image: firstImage,
+      alt: 'FRC Team 1712',
       items: [
-        'C++, Java, Python',
-        'Led team of 12 to create programming competition for 150+ high schoolers'
+        'Java, LabVIEW',
+        'Captain/President of Team in 2024 Season, Media & Recognitions Officer in 2023 Season',
+        'Awarded FIRST Impact Award in 2023'
       ]
     },
     {
       id: 6,
-      title: 'Captain @ FRC Team 1712',
-      date: 'Sep 2021 - June 2024',
-      image: firstImage,
-      alt: 'FRC Team 1712',
+      title: 'Director @ CodeLM',
+      date: 'Fall 2020 - Spring 2024',
+      image: codelmImage,
+      alt: 'CodeLM',
       items: [
-        'Java',
-        'Captain/President of Team in 2024 Season, Media & Recognitions Officer in 2023 Season',
-        'Won FIRST Impact Award in 2023'
+        'C++, Java, Python',
+        'Led team of 12 to create programming competition for 150+ high schoolers.'
       ]
     }
   ]
