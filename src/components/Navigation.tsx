@@ -1,9 +1,18 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-const Navigation = ({ isVisible }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+interface NavigationProps {
+  isVisible: boolean
+}
 
-  const navItems = [
+interface NavItem {
+  href: string
+  label: string
+}
+
+const Navigation = ({ isVisible }: NavigationProps) => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
+
+  const navItems: NavItem[] = [
     { href: '#hero', label: 'home' },
     { href: '#about', label: 'about' },
     { href: '#experiences', label: 'experiences' },
@@ -11,7 +20,7 @@ const Navigation = ({ isVisible }) => {
     { href: '#connect', label: 'connect' }
   ]
 
-  const scrollToSection = (href) => {
+  const scrollToSection = (href: string): void => {
     const element = document.querySelector(href)
     if (element) {
       element.scrollIntoView({
@@ -22,7 +31,7 @@ const Navigation = ({ isVisible }) => {
     setIsMenuOpen(false)
   }
 
-  const toggleMenu = () => {
+  const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen)
   }
 
@@ -70,4 +79,4 @@ const Navigation = ({ isVisible }) => {
   )
 }
 
-export default Navigation 
+export default Navigation

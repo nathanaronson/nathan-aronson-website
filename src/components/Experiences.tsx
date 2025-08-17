@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import asteraImage from '../assets/astera.png'
 import burnsImage from '../assets/burns.png'
 import pennImage from '../assets/penn.png'
@@ -6,10 +6,19 @@ import perImage from '../assets/per.png'
 import codelmImage from '../assets/codelm.png'
 import firstImage from '../assets/first.png'
 
-const Experiences = () => {
-  const experiencesRef = useRef(null)
+interface Experience {
+  id: number
+  title: string
+  date: string
+  image: string
+  alt: string
+  items: string[]
+}
 
-  const experiencesData = [
+const Experiences = () => {
+  const experiencesRef = useRef<HTMLDivElement>(null)
+
+  const experiencesData: Experience[] = [
     {
       id: 1,
       title: 'Software Engineer Intern @ Burns Engineering',
@@ -89,20 +98,19 @@ const Experiences = () => {
       (entries) => {
         entries.forEach((entry, index) => {
           if (entry.isIntersecting) {
-            // Add staggered animation delay for the main item
+            const element = entry.target as HTMLElement
+            
             setTimeout(() => {
-              entry.target.style.opacity = '1'
-              entry.target.style.transform = 'translateY(0)'
+              element.style.opacity = '1'
+              element.style.transform = 'translateY(0)'
             }, index * 200)
 
-            // Animate the icon with a slight delay
             setTimeout(() => {
-              entry.target.classList.add('animate-icon')
+              element.classList.add('animate-icon')
             }, index * 200 + 300)
 
-            // Animate the content with another delay
             setTimeout(() => {
-              entry.target.classList.add('animate-content')
+              element.classList.add('animate-content')
             }, index * 200 + 500)
           }
         })
@@ -110,7 +118,6 @@ const Experiences = () => {
       { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
     )
 
-    // Animate the experiences line
     const experiencesContainer = experiencesRef.current
     if (experiencesContainer) {
       const lineObserver = new IntersectionObserver(
@@ -126,12 +133,12 @@ const Experiences = () => {
       lineObserver.observe(experiencesContainer)
     }
 
-    // Animate individual experiences items
     const experiencesItems = document.querySelectorAll('.experiences-item')
     experiencesItems.forEach((item) => {
-      item.style.opacity = '0'
-      item.style.transform = 'translateY(30px)'
-      item.style.transition = 'opacity 0.6s ease, transform 0.6s ease'
+      const element = item as HTMLElement
+      element.style.opacity = '0'
+      element.style.transform = 'translateY(30px)'
+      element.style.transition = 'opacity 0.6s ease, transform 0.6s ease'
       observer.observe(item)
     })
 
@@ -172,4 +179,4 @@ const Experiences = () => {
   )
 }
 
-export default Experiences 
+export default Experiences

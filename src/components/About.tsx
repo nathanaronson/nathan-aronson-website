@@ -1,22 +1,23 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 const About = () => {
-  const aboutRef = useRef(null)
+  const aboutRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.style.opacity = '1'
-            entry.target.style.transform = 'translateY(0)'
+            const target = entry.target as HTMLElement
+            target.style.opacity = '1'
+            target.style.transform = 'translateY(0)'
           }
         })
       },
       { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
     )
 
-    const aboutContent = document.querySelector('.about-content')
+    const aboutContent = document.querySelector('.about-content') as HTMLElement
     if (aboutContent) {
       aboutContent.style.opacity = '0'
       aboutContent.style.transform = 'translateY(30px)'
@@ -47,4 +48,4 @@ const About = () => {
   )
 }
 
-export default About 
+export default About

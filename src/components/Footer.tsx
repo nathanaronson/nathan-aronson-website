@@ -1,7 +1,11 @@
-import React from 'react'
+
+interface SocialLink {
+  href: string
+  label: string
+}
 
 const Footer = () => {
-  const socialLinks = [
+  const socialLinks: SocialLink[] = [
     {
       href: 'https://linkedin.com/in/nathanaronson',
       label: 'LinkedIn'
@@ -45,4 +49,4 @@ const Footer = () => {
   )
 }
 
-export default Footer 
+export default Footer

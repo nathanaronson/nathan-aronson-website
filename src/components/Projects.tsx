@@ -1,11 +1,21 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+
+interface ProjectItem {
+  id: number
+  title: string
+  role: string
+  tech: string
+  description: string
+  icon: string
+  items: string[]
+}
 
 const Projects = () => {
-  const projectsRef = useRef(null)
-  const [hasShownMore, setHasShownMore] = useState(false)
-  const [isAnimating, setIsAnimating] = useState(false)
+  const projectsRef = useRef<HTMLDivElement>(null)
+  const [hasShownMore, setHasShownMore] = useState<boolean>(false)
+  const [isAnimating, setIsAnimating] = useState<boolean>(false)
 
-  const projectsData = [
+  const projectsData: ProjectItem[] = [
     {
       id: 1,
       title: 'Apartment Rent Prediction and Classification',
@@ -71,27 +81,26 @@ const Projects = () => {
   const initialProjectsCount = 3
   const displayedProjects = hasShownMore ? projectsData : projectsData.slice(0, initialProjectsCount)
 
-  const handleShowMore = () => {
+  const handleShowMore = (): void => {
     setIsAnimating(true)
     setHasShownMore(true)
     
-    // Reset animation state after animation completes
     setTimeout(() => {
       setIsAnimating(false)
     }, 1000)
   }
 
   useEffect(() => {
-    // Simple animation without intersection observer
     const projectItems = document.querySelectorAll('.project-item')
     projectItems.forEach((item, index) => {
-      item.style.opacity = '0'
-      item.style.transform = 'translateY(30px)'
-      item.style.transition = 'opacity 0.6s ease, transform 0.6s ease'
+      const element = item as HTMLElement
+      element.style.opacity = '0'
+      element.style.transform = 'translateY(30px)'
+      element.style.transition = 'opacity 0.6s ease, transform 0.6s ease'
       
       setTimeout(() => {
-        item.style.opacity = '1'
-        item.style.transform = 'translateY(0)'
+        element.style.opacity = '1'
+        element.style.transform = 'translateY(0)'
       }, index * 200)
     })
   }, [hasShownMore])
@@ -139,4 +148,4 @@ const Projects = () => {
   )
 }
 
-export default Projects 
+export default Projects

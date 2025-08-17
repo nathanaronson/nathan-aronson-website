@@ -60,6 +60,9 @@ yarn-error.log*
 *.swp
 *.swo
 
+# Claude
+.claude/
+
 # Logs
 logs
 *.log

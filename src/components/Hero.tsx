@@ -1,15 +1,21 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import headshotImage from '../assets/headshot.png'
 
-const Hero = () => {
-  const [greeting1, setGreeting1] = useState('')
-  const [greeting2, setGreeting2] = useState('')
-  const [gradientText, setGradientText] = useState('')
-  const [isTypingComplete, setIsTypingComplete] = useState(false)
-  const [currentTypingPhase, setCurrentTypingPhase] = useState(0) // 0: greeting1, 1: greeting2, 2: gradientText
-  const [showCursor, setShowCursor] = useState(false)
+interface SocialLink {
+  href: string
+  icon: string
+  label: string
+}
 
-  const socialLinks = [
+const Hero = () => {
+  const [greeting1, setGreeting1] = useState<string>('')
+  const [greeting2, setGreeting2] = useState<string>('')
+  const [gradientText, setGradientText] = useState<string>('')
+  const [isTypingComplete, setIsTypingComplete] = useState<boolean>(false)
+  const [currentTypingPhase, setCurrentTypingPhase] = useState<number>(0)
+  const [showCursor, setShowCursor] = useState<boolean>(false)
+
+  const socialLinks: SocialLink[] = [
     {
       href: 'https://linkedin.com/in/nathanaronson',
       icon: 'fab fa-linkedin-in',
@@ -28,7 +34,13 @@ const Hero = () => {
   ]
 
   useEffect(() => {
-    const typeWriter = (text, setText, onComplete, phase, speed) => {
+    const typeWriter = (
+      text: string, 
+      setText: (value: string) => void, 
+      onComplete: (() => void) | null, 
+      phase: number, 
+      speed: number
+    ): void => {
       let i = 0
       setCurrentTypingPhase(phase)
       
@@ -43,17 +55,18 @@ const Hero = () => {
       }, speed)
     }
 
-    // Start typing animation
     setTimeout(() => {
-      // Type "Hey," in 1 second (4 characters, so 250ms per character)
-      setShowCursor(true) // Show cursor when "Hey," starts
+      setShowCursor(true)
       typeWriter('Hey,', setGreeting1, () => {
         setTimeout(() => {
-          // Type "I'm Nathan" in 2 seconds total (10 characters, so 200ms per character)
           typeWriter('I\'m ', setGreeting2, () => {
             setTimeout(() => {
-              // Type "Nathan" faster to complete within the 2-second total
-              const typeWriterFast = (text, setText, onComplete, phase) => {
+              const typeWriterFast = (
+                text: string, 
+                setText: (value: string) => void, 
+                onComplete: (() => void) | null, 
+                phase: number
+              ): void => {
                 let i = 0
                 setCurrentTypingPhase(phase)
                 
@@ -65,25 +78,24 @@ const Hero = () => {
                     clearInterval(timer)
                     if (onComplete) onComplete()
                   }
-                }, 150) // Faster typing for "Nathan" to fit within 2-second total
+                }, 150)
               }
               
               typeWriterFast('Nathan', setGradientText, () => {
-                // Wait 1 second before cursor disappears
                 setTimeout(() => {
                   setIsTypingComplete(true)
-                  setCurrentTypingPhase(-1) // No more typing
+                  setCurrentTypingPhase(-1)
                   setShowCursor(false)
-                }, 1000) // 1 second wait before cursor disappears
+                }, 1000)
               }, 2)
-            }, 0) // No delay between "I'm " and "Nathan"
-          }, 1, 200) // 200ms per character for "I'm "
-        }, 1000) // 1 second wait between "Hey," and "I'm Nathan"
-      }, 0, 250) // 250ms per character for "Hey,"
-    }, 800) // Cursor animation before starting to type
+            }, 0)
+          }, 1, 200)
+        }, 1000)
+      }, 0, 250)
+    }, 800)
   }, [])
 
-  const scrollToAbout = () => {
+  const scrollToAbout = (): void => {
     const aboutSection = document.querySelector('#about')
     if (aboutSection) {
       aboutSection.scrollIntoView({
@@ -141,4 +153,4 @@ const Hero = () => {
   )
 }
 
-export default Hero 
+export default Hero
