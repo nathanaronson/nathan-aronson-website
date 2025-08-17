@@ -1,6 +1,6 @@
 # Nathan Aronson – Personal Website
 
-Live: [seas.upenn.edu/~narons](https://seas.upenn.edu/~narons)
+Live: [seas.upenn.edu/~narons/](https://seas.upenn.edu/~narons/)
 
 ## Structure
 ```
