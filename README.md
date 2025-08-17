@@ -50,7 +50,3 @@ src/
 ## Deployment
 1. Build: `npm run build`
 2. Deploy the `dist` folder to your static host
-
----
-
-_With ❤️ by Nathan Aronson_
