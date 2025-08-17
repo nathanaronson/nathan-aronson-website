@@ -6,21 +6,23 @@ Live: [seas.upenn.edu/~narons](https://seas.upenn.edu/~narons)
 ```
 src/
 ├── components/
-│   ├── Navigation.jsx
-│   ├── Hero.jsx
-│   ├── About.jsx
-│   ├── Experiences.jsx
-│   ├── Projects.jsx
-│   └── Footer.jsx
+│   ├── Navigation.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Experiences.tsx
+│   ├── Projects.tsx
+│   └── Footer.tsx
 ├── css/
 │   └── main.css
 ├── assets/
-├── App.jsx
-└── main.jsx
+├── App.tsx
+├── main.tsx
+└── vite-env.d.ts
 ```
 
 ## Tech Stack
 - React 18
+- TypeScript 5
 - Vite
 - CSS3 (custom, responsive, animated)
 - Font Awesome, Google Fonts
