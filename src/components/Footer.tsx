@@ -17,6 +17,10 @@ const Footer = () => {
     {
       href: 'mailto:narons@seas.upenn.edu',
       label: 'Email'
+    },
+    {
+      href: 'https://www.seas.upenn.edu/~narons/assets/files/Resume',
+      label: 'Resume'
     }
   ]
 
