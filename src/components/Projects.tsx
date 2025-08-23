@@ -83,7 +83,7 @@ const Projects = () => {
       url: 'https://github.com/nathanaronson/discord-bots',
       items: [
         'Developed Hangman bot with word categories, scoring system, and interactive visual states.',
-        'Created Blackjack bot with deck management, betting system, and performance analytics.',
+        'Created BlackJack bot with deck management, betting system, and performance analytics.',
       ],
     },
   ];
