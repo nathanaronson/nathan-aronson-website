@@ -579,6 +579,15 @@ h6 {
   color: #888888;
   font-weight: bold;
 }
+.project-title-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.project-title-link:hover {
+  color: #cccccc;
+  text-decoration: underline;
+}
 .projects-toggle {
   display: flex;
   justify-content: center;
@@ -792,7 +801,15 @@ h6 {
   .project-icon i {
     font-size: 1.8rem;
   }
-
+  .project-title-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .project-title-link:hover {
+    color: #cccccc;
+    text-decoration: underline;
+  }
   body {
     background-color: #2a2a2a;
     background-attachment: fixed;
@@ -914,6 +931,15 @@ h6 {
   }
   .project-icon i {
     font-size: 1.3rem;
+  }
+  .project-title-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .project-title-link:hover {
+    color: #cccccc;
+    text-decoration: underline;
   }
   .experiences-container {
     padding-left: 2rem;

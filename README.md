@@ -26,7 +26,7 @@ src/
 - TypeScript 5
 - Vite
 - CSS3
-- Font Awesome, Google Fonts
+- Google Fonts and Font Awesome
 
 ## Setup
 1. Clone:

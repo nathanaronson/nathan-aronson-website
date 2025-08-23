@@ -1,8 +1,8 @@
 {
   "name": "nathan-aronson-website",
   "version": "1.0.0",
-  "description": "Personal Website of Nathan Aronson",
-  "main": "index.js",
+  "description": "Personal Website of Nathan Aronson - Software Engineer and University of Pennsylvania Student",
+  "main": "src/main.tsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -24,11 +24,6 @@
     "typescript": "^5.9.2",
     "vite": "^5.0.8"
   },
-  "keywords": [
-    "react",
-    "personal-website",
-    "portfolio"
-  ],
   "author": "Nathan Aronson",
   "license": "MIT",
   "repository": {
