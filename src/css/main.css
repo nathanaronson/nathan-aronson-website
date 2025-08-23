@@ -27,7 +27,7 @@ body {
     radial-gradient(circle at 10% 60%, rgba(90,90,90,0.06) 0, rgba(90,90,90,0.06) 8%, transparent 8%),
     radial-gradient(circle at 90% 40%, rgba(50,50,50,0.05) 0, rgba(50,50,50,0.05) 6%, transparent 6%);
     background-repeat: no-repeat;
-    background-size: 100% 600vh;
+    background-size: 100% 800vh;
     background-attachment: scroll;
 }
 .container {
