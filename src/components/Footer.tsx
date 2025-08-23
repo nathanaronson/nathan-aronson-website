@@ -1,24 +1,23 @@
-
 interface SocialLink {
-  href: string
-  label: string
+  href: string;
+  label: string;
 }
 
 const Footer = () => {
   const socialLinks: SocialLink[] = [
     {
       href: 'https://linkedin.com/in/nathanaronson',
-      label: 'LinkedIn'
+      label: 'LinkedIn',
     },
     {
       href: 'https://github.com/nathanaronson',
-      label: 'GitHub'
+      label: 'GitHub',
     },
     {
       href: 'mailto:narons@seas.upenn.edu',
-      label: 'Email'
+      label: 'Email',
     },
-  ]
+  ];
 
   return (
     <footer id="connect" className="footer">
@@ -27,7 +26,7 @@ const Footer = () => {
           <div className="footer-left">
             <h3>Connect With Me...</h3>
             <div className="footer-socials">
-              {socialLinks.map((link) => (
+              {socialLinks.map(link => (
                 <a
                   key={link.href}
                   href={link.href}
@@ -46,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

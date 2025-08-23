@@ -1,109 +1,126 @@
-import { useState, useEffect } from 'react'
-import headshotImage from '../assets/headshot.png'
+import { useState, useEffect } from 'react';
+import headshotImage from '../assets/headshot.png';
 
 interface SocialLink {
-  href: string
-  icon: string
-  label: string
+  href: string;
+  icon: string;
+  label: string;
 }
 
 const Hero = () => {
-  const [greeting1, setGreeting1] = useState<string>('')
-  const [greeting2, setGreeting2] = useState<string>('')
-  const [gradientText, setGradientText] = useState<string>('')
-  const [isTypingComplete, setIsTypingComplete] = useState<boolean>(false)
-  const [currentTypingPhase, setCurrentTypingPhase] = useState<number>(0)
-  const [showCursor, setShowCursor] = useState<boolean>(false)
+  const [greeting1, setGreeting1] = useState<string>('');
+  const [greeting2, setGreeting2] = useState<string>('');
+  const [gradientText, setGradientText] = useState<string>('');
+  const [isTypingComplete, setIsTypingComplete] = useState<boolean>(false);
+  const [currentTypingPhase, setCurrentTypingPhase] = useState<number>(0);
+  const [showCursor, setShowCursor] = useState<boolean>(false);
 
   const socialLinks: SocialLink[] = [
     {
       href: 'https://linkedin.com/in/nathanaronson',
       icon: 'fab fa-linkedin-in',
-      label: 'LinkedIn'
+      label: 'LinkedIn',
     },
     {
       href: 'https://github.com/nathanaronson',
       icon: 'fab fa-github',
-      label: 'GitHub'
+      label: 'GitHub',
     },
     {
       href: 'mailto:narons@seas.upenn.edu',
       icon: 'fas fa-envelope',
-      label: 'Email'
-    }
-  ]
+      label: 'Email',
+    },
+  ];
 
   useEffect(() => {
     const typeWriter = (
-      text: string, 
-      setText: (value: string) => void, 
-      onComplete: (() => void) | null, 
-      phase: number, 
+      text: string,
+      setText: (value: string) => void,
+      onComplete: (() => void) | null,
+      phase: number,
       speed: number
     ): void => {
-      let i = 0
-      setCurrentTypingPhase(phase)
-      
+      let i = 0;
+      setCurrentTypingPhase(phase);
+
       const timer = setInterval(() => {
         if (i < text.length) {
-          setText(text.substring(0, i + 1))
-          i++
+          setText(text.substring(0, i + 1));
+          i++;
         } else {
-          clearInterval(timer)
-          if (onComplete) onComplete()
+          clearInterval(timer);
+          if (onComplete) onComplete();
         }
-      }, speed)
-    }
+      }, speed);
+    };
 
     setTimeout(() => {
-      setShowCursor(true)
-      typeWriter('Hey,', setGreeting1, () => {
-        setTimeout(() => {
-          typeWriter('I\'m ', setGreeting2, () => {
-            setTimeout(() => {
-              const typeWriterFast = (
-                text: string, 
-                setText: (value: string) => void, 
-                onComplete: (() => void) | null, 
-                phase: number
-              ): void => {
-                let i = 0
-                setCurrentTypingPhase(phase)
-                
-                const timer = setInterval(() => {
-                  if (i < text.length) {
-                    setText(text.substring(0, i + 1))
-                    i++
-                  } else {
-                    clearInterval(timer)
-                    if (onComplete) onComplete()
-                  }
-                }, 150)
-              }
-              
-              typeWriterFast('Nathan', setGradientText, () => {
+      setShowCursor(true);
+      typeWriter(
+        'Hey,',
+        setGreeting1,
+        () => {
+          setTimeout(() => {
+            typeWriter(
+              "I'm ",
+              setGreeting2,
+              () => {
                 setTimeout(() => {
-                  setIsTypingComplete(true)
-                  setCurrentTypingPhase(-1)
-                  setShowCursor(false)
-                }, 1000)
-              }, 2)
-            }, 0)
-          }, 1, 200)
-        }, 1000)
-      }, 0, 250)
-    }, 800)
-  }, [])
+                  const typeWriterFast = (
+                    text: string,
+                    setText: (value: string) => void,
+                    onComplete: (() => void) | null,
+                    phase: number
+                  ): void => {
+                    let i = 0;
+                    setCurrentTypingPhase(phase);
+
+                    const timer = setInterval(() => {
+                      if (i < text.length) {
+                        setText(text.substring(0, i + 1));
+                        i++;
+                      } else {
+                        clearInterval(timer);
+                        if (onComplete) onComplete();
+                      }
+                    }, 150);
+                  };
+
+                  typeWriterFast(
+                    'Nathan',
+                    setGradientText,
+                    () => {
+                      setTimeout(() => {
+                        setIsTypingComplete(true);
+                        setCurrentTypingPhase(-1);
+                        setShowCursor(false);
+                      }, 1000);
+                    },
+                    2
+                  );
+                }, 0);
+              },
+              1,
+              200
+            );
+          }, 1000);
+        },
+        0,
+        250
+      );
+    }, 800);
+  }, []);
 
   const scrollToAbout = (): void => {
-    const aboutSection = document.querySelector('#about')
+    const aboutSection = document.querySelector('#about');
     if (aboutSection) {
       aboutSection.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
-      })
+        block: 'start',
+      });
     }
-  }
+  };
 
   return (
     <section id="hero" className="hero">
@@ -114,22 +131,25 @@ const Hero = () => {
               <img src={headshotImage} alt="Nathan Aronson" />
             </div>
           </div>
-          
+
           <div className="hero-right">
             <div className="greeting">
               <h1 className={isTypingComplete ? 'typing-complete' : ''}>
                 {greeting1}
-                {currentTypingPhase === 0 && showCursor && <span className="cursor">|</span>}
+                {currentTypingPhase === 0 && showCursor && (
+                  <span className="cursor">|</span>
+                )}
               </h1>
               <h2 className={isTypingComplete ? 'typing-complete' : ''}>
                 {greeting2}
                 <span className="gradient-text">{gradientText}</span>
-                {(currentTypingPhase === 1 || currentTypingPhase === 2) && showCursor && <span className="cursor">|</span>}
+                {(currentTypingPhase === 1 || currentTypingPhase === 2) &&
+                  showCursor && <span className="cursor">|</span>}
               </h2>
             </div>
-            
+
             <div className="social-icons">
-              {socialLinks.map((link) => (
+              {socialLinks.map(link => (
                 <a
                   key={link.href}
                   href={link.href}
@@ -142,7 +162,7 @@ const Hero = () => {
                 </a>
               ))}
             </div>
-            
+
             <div className="scroll-indicator" onClick={scrollToAbout}>
               <i className="fas fa-chevron-down"></i>
             </div>
@@ -150,7 +170,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

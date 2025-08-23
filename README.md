@@ -15,6 +15,7 @@ src/
 ├── css/
 │   └── main.css
 ├── assets/
+│   └── *.png
 ├── App.tsx
 ├── main.tsx
 └── vite-env.d.ts
@@ -24,7 +25,7 @@ src/
 - React 18
 - TypeScript 5
 - Vite
-- CSS3 (custom, responsive, animated)
+- CSS3
 - Font Awesome, Google Fonts
 
 ## Setup
@@ -46,6 +47,8 @@ src/
 - `npm run dev` — Development server
 - `npm run build` — Production build
 - `npm run preview` — Preview build
+- `npm run format` — Format all files (Prettier)
+- `npm run format:check` — Check if files need formatting (Prettier)
 
 ## Deployment
 1. Build: `npm run build`

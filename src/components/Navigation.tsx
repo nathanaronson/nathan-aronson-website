@@ -1,63 +1,63 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 interface NavigationProps {
-  isVisible: boolean
+  isVisible: boolean;
 }
 
 interface NavItem {
-  href: string
-  label: string
+  href: string;
+  label: string;
 }
 
 const Navigation = ({ isVisible }: NavigationProps) => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const navItems: NavItem[] = [
     { href: '#hero', label: 'home' },
     { href: '#about', label: 'about' },
     { href: '#experiences', label: 'experiences' },
     { href: '#projects', label: 'projects' },
-    { href: '#connect', label: 'connect' }
-  ]
+    { href: '#connect', label: 'connect' },
+  ];
 
   const scrollToSection = (href: string): void => {
-    const element = document.querySelector(href)
+    const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
-      })
+        block: 'start',
+      });
     }
-    setIsMenuOpen(false)
-  }
+    setIsMenuOpen(false);
+  };
 
   const toggleMenu = (): void => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="nav-container">
         <div className="nav-brand">
-          <a 
-            href="#hero" 
-            onClick={(e) => { 
-              e.preventDefault() 
-              scrollToSection('#hero') 
+          <a
+            href="#hero"
+            onClick={e => {
+              e.preventDefault();
+              scrollToSection('#hero');
             }}
           >
             Nathan Aronson
           </a>
         </div>
-        
+
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-          {navItems.map((item) => (
+          {navItems.map(item => (
             <li key={item.href}>
-              <a 
-                href={item.href} 
-                onClick={(e) => { 
-                  e.preventDefault() 
-                  scrollToSection(item.href) 
+              <a
+                href={item.href}
+                onClick={e => {
+                  e.preventDefault();
+                  scrollToSection(item.href);
                 }}
               >
                 {item.label}
@@ -65,9 +65,9 @@ const Navigation = ({ isVisible }: NavigationProps) => {
             </li>
           ))}
         </ul>
-        
-        <div 
-          className={`hamburger ${isMenuOpen ? 'active' : ''}`} 
+
+        <div
+          className={`hamburger ${isMenuOpen ? 'active' : ''}`}
           onClick={toggleMenu}
         >
           <span></span>
@@ -76,7 +76,7 @@ const Navigation = ({ isVisible }: NavigationProps) => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;
