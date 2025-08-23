@@ -53,7 +53,7 @@ const Projects = () => {
       description:
         'Developing hydration metric tracker and reminder application with custom UI interface.',
       icon: 'fas fa-tint',
-      url: 'https://github.com/nathanaronson/Water-Watch',
+      url: 'https://github.com/nathanaronson/waterwatch',
       items: [
         'Implemented user authentication and metrics storage using Google Firebase; accurately calculated hydration needs by integrating location-based meteorological data through decoded JSON API responses.',
         'Create home-screen widget displaying daily water intake. Cached images using Kingfisher.',
