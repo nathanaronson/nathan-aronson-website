@@ -21,63 +21,62 @@ const Experiences = () => {
   const experiencesData: Experience[] = [
     {
       id: 1,
-      title: 'Software Engineer Intern @ Burns Engineering',
-      date: 'Summer 2025',
-      image: burnsImage,
-      alt: 'Burns Engineering',
+      title: 'Quantitative Engineer @ Astera Holdings',
+      date: 'June 2025 - August 2025',
+      image: asteraImage,
+      alt: 'Astera Holdings',
       items: [
-        'Railroad & Transit Team',
-        'Python, Rust',
-        'Architected communication protocol, state machine, and OS-image of safety-critical embedded system.'
+        'Infrastructure Team',
+        'Rust and Python',
+        'Built data acquisition pipeline and supported quantitative researchers.'
       ]
     },
     {
       id: 2,
-      title: 'Lead Quantitative Developer @ Astera Holdings',
-      date: 'Spring 2025 - Present',
-      image: asteraImage,
-      alt: 'Astera Holdings',
+      title: 'Software Engineer Intern @ Burns Engineering',
+      date: 'May 2025 - August 2025',
+      image: burnsImage,
+      alt: 'Burns Engineering',
       items: [
-        'Python, Rust',
-        'Lead development team to develop prediction-market trading engine.',
-        'Facilitate quantitative researchers with trade strategy executions.',
-        'Built cloud-deployed websocket data acquisition pipeline with real-time orderbook updates.',
+        'Railroad & Transit Team',
+        'Rust and Python',
+        'Developed locomotive safety system software and server content verification tool.'
       ]
     },
     {
       id: 3,
       title: 'Teaching Assistant @ University of Pennsylvania',
-      date: 'Winter 2025 - Present',
+      date: 'January 2025 - Present',
       image: pennImage,
       alt: 'University of Pennsylvania',
       items: [
         'CIS 1200: Programming Languages and Techniques I',
-        'OCaml, Java',
-        'Lead weekly recitation, hold office hours, grade homeworks, answer questions on Ed Discussions.'
+        'OCaml and Java',
+        'Lead weekly recitation, hold office hours, grade homework, and reinforce key concepts in functional and object-oriented programming.'
       ]
     },
     {
       id: 4,
-      title: 'Software Developer @ Penn Electric Racing',
-      date: 'Fall 2024 - Present',
+      title: 'Software Engineer @ Penn Electric Racing',
+      date: 'September 2024 - Present',
       image: perImage,
       alt: 'Penn Electric Racing',
       items: [
-        'Python, Rust, C++, Altium Designer',
-        'Designed vehicle dynamics simulation.',
-        'Spearheaded Accumulator Management System Hardware-in-the-Loop PCB.',
+        'Electrical Subteam',
+        'Python, Rust, C++, and Altium Designer',
+        'Improve quasi-static vehicle simulation tool and battery management system hardware.'
       ]
     },
     {
       id: 5,
       title: 'Captain @ FRC Team 1712',
-      date: 'Fall 2021 - Spring 2024',
+      date: 'September 2021 - June 2024',
       image: firstImage,
       alt: 'FRC Team 1712',
       items: [
-        'Java, LabVIEW',
-        'Captain/President of Team in 2024 Season, Media & Recognitions Officer in 2023 Season',
-        'Awarded FIRST Impact Award in 2023'
+        'President for the 2024 season; Media & Recognitions Officer for the 2023 season.',
+        'Managed competitive robotics team of 52, sponsorships, finances, summer camp, and outreach sessions.',
+        'Awarded FIRST Impact Award and recognized as a Dean\'s List Semi-Finalist in 2023.'
       ]
     },
     {
@@ -87,8 +86,9 @@ const Experiences = () => {
       image: codelmImage,
       alt: 'CodeLM',
       items: [
+        'Competitor (2021) → Organizer (2022) → Director (2023) → Advisor (2024)',
         'C++, Java, Python',
-        'Led team of 12 to create programming competition for 150+ high schoolers.'
+        'Led team to design 12 programming problems and organize in-person competition for 150+ high schoolers.'
       ]
     }
   ]

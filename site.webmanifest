@@ -1,7 +1,7 @@
 {
     "name": "Nathan Aronson",
     "short_name": "Nathan Aronson",
-    "description": "Personal website of Nathan Aronson - Computer Science student at UPenn",
+    "description": "Personal Website of Nathan Aronson",
     "icons": [
         {
             "src": "src/assets/penn.png",

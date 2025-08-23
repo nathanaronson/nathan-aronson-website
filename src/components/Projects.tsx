@@ -21,11 +21,11 @@ const Projects = () => {
       title: 'Apartment Rent Prediction and Classification',
       role: 'Data Scientist & ML Engineer',
       tech: 'Python, Pandas, Sklearn, PyTorch, NumPy',
-      description: 'Multilabel predictor of apartment rent prices of 100,000+ apartments in the United States.',
+      description: 'Multilabel predictor of apartment rent prices of 100,000+ real listings in the contiguous United States.',
       icon: 'fas fa-home',
       items: [
-        'Modeled using Linear Regression, Gradient Boosting Regressor, Random Forest Regressor, and Neural Network (16 layers and 100 epochs).',
-        'Achieved explained variance of 0.85 with Random Forest Regressor and Neural Network classification of 0.88.'
+        'Modeled using Linear Regression, Gradient Boosting Regressor, Random Forest Regressor, and Neural Network.',
+        '0.85 explained variance on regression tasks using a Random Forest Regressor and 0.87 F1 score on classification tasks using a Neural Network.'
       ]
     },
     {
@@ -57,7 +57,7 @@ const Projects = () => {
       title: 'Thermahax',
       role: 'Hardware Engineer & Embedded Systems Developer',
       tech: 'Arduino, C++',
-      description: 'Temperature control system using DHT11 sensor to control relays and Peltier junctions for heating/cooling to manipulate nearby thermometer readings.',
+      description: 'Temperature control system to manipulate nearby thermometer readings.',
       icon: 'fas fa-thermometer-half',
       items: [
         'Designed dual NMOS/PMOS H-bridge configuration to control Peltier junctions for precise heating and cooling.',
@@ -69,11 +69,11 @@ const Projects = () => {
       title: 'Discord Bots',
       role: 'Software Developer',
       tech: 'Python, Discord.py',
-      description: 'Interactive Discord bots featuring Hangman and Blackjack games with real-time multiplayer functionality.',
+      description: 'Interactive Discord chatbots with multiplayer support.',
       icon: 'fas fa-robot',
       items: [
-        'Developed Hangman bot with word categories, scoring system, and interactive game state management.',
-        'Created Blackjack bot with deck management, betting system, and multiplayer support using Discord.py library.'
+        'Developed Hangman bot with word categories, scoring system, and interactive visual states.',
+        'Created Blackjack bot with deck management, betting system, and performance analytics.'
       ]
     }
   ]
