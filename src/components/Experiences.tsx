@@ -21,14 +21,14 @@ const Experiences = () => {
   const experiencesData: Experience[] = [
     {
       id: 1,
-      title: 'Quantitative Engineer @ Astera Holdings',
+      title: 'Lead Quantitative Engineer @ Astera Holdings',
       date: 'June 2025 - August 2025',
       image: asteraImage,
       alt: 'Astera Holdings',
       items: [
         'Infrastructure Team',
         'Rust and Python',
-        'Built data acquisition pipeline and supported quantitative researchers.',
+        'Led team to build data acquisition pipeline and support quantitative researchers.',
       ],
     },
     {
@@ -52,7 +52,7 @@ const Experiences = () => {
       items: [
         'CIS 1200: Programming Languages and Techniques I',
         'OCaml and Java',
-        'Lead weekly recitation, hold office hours, grade homework, and reinforce key concepts in functional and object-oriented programming.',
+        'Leading weekly recitation, hold office hours, grade homework, and reinforcing key concepts in functional and object-oriented programming.',
       ],
     },
     {
@@ -64,7 +64,7 @@ const Experiences = () => {
       items: [
         'Electrical Subteam',
         'Python, Rust, C++, and Altium Designer',
-        'Improve quasi-static vehicle simulation tool and battery management system hardware.',
+        'Improving the quasi-static vehicle simulation tool and battery management system hardware.',
       ],
     },
     {
