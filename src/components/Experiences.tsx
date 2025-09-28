@@ -5,10 +5,13 @@ import pennImage from '../assets/penn.png';
 import perImage from '../assets/per.png';
 import codelmImage from '../assets/codelm.png';
 import firstImage from '../assets/first.png';
+import labsImage from '../assets/labs.png';
 
 interface Experience {
   id: number;
   title: string;
+  location: string;
+  skills: string[];
   date: string;
   image: string;
   alt: string;
@@ -21,73 +24,92 @@ const Experiences = () => {
   const experiencesData: Experience[] = [
     {
       id: 1,
-      title: 'Lead Quantitative Engineer @ Astera Holdings',
-      date: 'June 2025 - August 2025',
-      image: asteraImage,
-      alt: 'Astera Holdings',
+      title: 'Software Developer',
+      location: 'Penn Labs',
+      date: 'September 2025 - Present',
+      image: labsImage,
+      alt: 'Penn Labs',
+      skills: ['Swift', 'SwiftUI'],
       items: [
-        'Infrastructure Team',
-        'Rust and Python',
-        'Led team to build data acquisition pipeline and support quantitative researchers.',
+        'Penn Mobile',
+        'Maintaining and improving a mobile app with 10,000 monthly users.',
       ],
     },
     {
       id: 2,
-      title: 'Software Engineer Intern @ Burns Engineering',
-      date: 'May 2025 - August 2025',
-      image: burnsImage,
-      alt: 'Burns Engineering',
+      title: 'Lead Quantitative Engineer',
+      location: 'Astera Holdings',
+      date: 'June 2025 - August 2025',
+      image: asteraImage,
+      alt: 'Astera Holdings',
+      skills: ['Rust', 'Python'],
       items: [
-        'Railroad & Transit Team',
-        'Rust and Python',
-        'Developed locomotive safety system software and server content verification tool.',
+        'Infrastructure Team',
+        'Led team of three to build data pipeline and support quantitative researchers.',
       ],
     },
     {
       id: 3,
-      title: 'Teaching Assistant @ University of Pennsylvania',
-      date: 'January 2025 - Present',
-      image: pennImage,
-      alt: 'University of Pennsylvania',
+      title: 'Software Engineer Intern',
+      location: 'Burns Engineering',
+      date: 'May 2025 - August 2025',
+      image: burnsImage,
+      alt: 'Burns Engineering',
+      skills: ['Rust', 'Python'],
       items: [
-        'CIS 1200: Programming Languages and Techniques I',
-        'OCaml and Java',
-        'Leading weekly recitation, hold office hours, grade homework, and reinforcing key concepts in functional and object-oriented programming.',
+        'Railroad & Transit Team',
+        'Developed locomotive safety system software and server-content verification tool.',
       ],
     },
     {
       id: 4,
-      title: 'Software Engineer @ Penn Electric Racing',
-      date: 'September 2024 - Present',
-      image: perImage,
-      alt: 'Penn Electric Racing',
+      title: 'Teaching Assistant',
+      location: 'University of Pennsylvania',
+      date: 'January 2025 - Present',
+      image: pennImage,
+      alt: 'University of Pennsylvania',
+      skills: ['OCaml', 'Java'],
       items: [
-        'Electrical Subteam',
-        'Python, Rust, C++, and Altium Designer',
-        'Improving the quasi-static vehicle simulation tool and battery management system hardware.',
+        'CIS 1200: Programming Languages and Techniques I',
+        'Leading weekly recitation, holding office hours, grading homework, and reinforcing key concepts in functional and object-oriented programming.',
       ],
     },
     {
       id: 5,
-      title: 'Captain @ FRC Team 1712',
-      date: 'September 2021 - June 2024',
-      image: firstImage,
-      alt: 'FRC Team 1712',
+      title: 'Software Developer',
+      location: 'Penn Electric Racing',
+      date: 'September 2024 - Present',
+      image: perImage,
+      alt: 'Penn Electric Racing',
+      skills: ['C++', 'Python', 'Rust', 'Altium Designer'],
       items: [
-        'President for the 2024 season; Media & Recognitions Officer for the 2023 season.',
-        'Managed competitive robotics team of 52, sponsorships, finances, summer camp, and outreach sessions.',
-        "Awarded FIRST Impact Award and recognized as a Dean's List Semi-Finalist in 2023.",
+        'Electrical Subteam',
+        'Spearheading embedded board debugging and improving quasi-static vehicle simulation.',
       ],
     },
     {
       id: 6,
-      title: 'Director @ CodeLM',
+      title: 'President',
+      location: 'FRC Team 1712',
+      date: 'September 2021 - June 2024',
+      image: firstImage,
+      alt: 'FRC Team 1712',
+      skills: ['Java', 'LabVIEW', 'OnShape'],
+      items: [
+        'Software Developer (2022) -> Business Lead (2023) -> President (2024)',
+        "Awarded FIRST Impact Award and recognized as a Dean's List Semi-Finalist during tenure.",
+      ],
+    },
+    {
+      id: 7,
+      title: 'Director',
+      location: 'CodeLM',
       date: 'Fall 2020 - Spring 2024',
       image: codelmImage,
       alt: 'CodeLM',
+      skills: ['C++', 'Java', 'Python'],
       items: [
         'Competitor (2021) → Organizer (2022) → Director (2023) → Advisor (2024)',
-        'C++, Java, Python',
         'Led team to design 12 programming problems and organize in-person competition for 150+ high schoolers.',
       ],
     },
@@ -169,11 +191,29 @@ const Experiences = () => {
                 <img src={item.image} alt={item.alt} />
               </div>
               <div className="experiences-content">
-                <h3>{item.title}</h3>
+                <h3>
+                  {item.title} @
+                  <span className="experiences-location">{item.location}</span>
+                </h3>
                 <p className="experiences-date">{item.date}</p>
                 <ul>
+                  <li>
+                    {item.skills.map((skill, i) => {
+                      const isLast = i === item.skills.length - 1;
+                      const isSecondLast = i === item.skills.length - 2;
+                      return (
+                        <span key={i}>
+                          <span className="experience-skill">{skill}</span>
+                          {!isLast &&
+                            (isSecondLast && item.skills.length > 1
+                              ? ' and '
+                              : ', ')}
+                        </span>
+                      );
+                    })}
+                  </li>
                   {item.items.map((listItem, index) => (
-                    <li key={index}>{listItem}</li>
+                    <li key={index + item.skills.length}>{listItem}</li>
                   ))}
                 </ul>
               </div>

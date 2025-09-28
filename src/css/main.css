@@ -464,6 +464,18 @@ h6 {
   margin-bottom: 0.5rem;
   font-weight: 400;
 }
+.experiences-location {
+  color: #9a9a9a;
+  font-weight: 300;
+  margin-left: 0.4rem;
+}
+.experience-skill {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  color: #ffffff;
+  font-weight: 400;
+}
 .experiences-date {
   font-size: 1rem;
   color: #888888;
