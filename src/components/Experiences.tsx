@@ -24,7 +24,7 @@ const Experiences = () => {
   const experiencesData: Experience[] = [
     {
       id: 1,
-      title: 'Software Developer',
+      title: 'iOS Mobile Engineer',
       location: 'Penn Labs',
       date: 'September 2025 - Present',
       image: labsImage,
@@ -32,7 +32,7 @@ const Experiences = () => {
       skills: ['Swift', 'SwiftUI'],
       items: [
         'Penn Mobile',
-        'Maintaining and improving a mobile app with 10,000 monthly users.',
+        "Maintaining and improving Penn's mobile app used by 10,000 students monthly.",
       ],
     },
     {
@@ -76,7 +76,7 @@ const Experiences = () => {
     },
     {
       id: 5,
-      title: 'Software Developer',
+      title: 'Software Engineer',
       location: 'Penn Electric Racing',
       date: 'September 2024 - Present',
       image: perImage,

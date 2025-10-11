@@ -48,8 +48,8 @@ const About = () => {
           <p>
             I've managed 2 development teams and led multiple projects, and I
             have a strong understanding of the entire software development
-            lifecycle. Currently, my interests lie in quantitative finance,
-            machine learning, and low-latency programming.
+            lifecycle. Currently, my interests lie in low-latency programming,
+            iOS development, and quantitative finance.
           </p>
         </div>
       </div>
