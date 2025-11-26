@@ -104,7 +104,7 @@ const Experiences = () => {
       id: 7,
       title: 'Director',
       location: 'CodeLM',
-      date: 'Fall 2020 - Spring 2024',
+      date: 'September 2020 - June 2024',
       image: codelmImage,
       alt: 'CodeLM',
       skills: ['C++', 'Java', 'Python'],
