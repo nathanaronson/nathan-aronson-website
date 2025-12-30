@@ -84,9 +84,8 @@ const Hero = () => {
                         clearInterval(timer);
                         if (onComplete) onComplete();
                       }
-                    }, 150);
+                    }, 75);
                   };
-
                   typeWriterFast(
                     'Nathan',
                     setGradientText,
@@ -95,21 +94,21 @@ const Hero = () => {
                         setIsTypingComplete(true);
                         setCurrentTypingPhase(-1);
                         setShowCursor(false);
-                      }, 1000);
+                      }, 500);
                     },
                     2
                   );
                 }, 0);
               },
               1,
-              200
+              100
             );
-          }, 1000);
+          }, 500);
         },
         0,
-        250
+        125
       );
-    }, 800);
+    }, 400);
   }, []);
 
   const scrollToAbout = (): void => {

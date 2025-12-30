@@ -19,6 +19,48 @@ const Projects = () => {
   const projectsData: ProjectItem[] = [
     {
       id: 1,
+      title: 'Arc - Programming Language',
+      role: 'Systems Engineer',
+      tech: 'Rust',
+      description:
+        'Bytecode-compiled programming language with virtual machine.',
+      icon: 'fas fa-code',
+      url: 'https://github.com/nathanaronson/arc',
+      items: [
+        'Implemented dynamically-typed programming language in Rust with Pratt parsing.',
+        'Supports variables, scoping, control flow, functions, classes, inheritance, and multiple types.',
+      ],
+    },
+    {
+      id: 2,
+      title: 'Videre',
+      role: 'Education & ML Engineer',
+      tech: 'Python, TypeScript, React, Tailwind, MongoDB, Manim, FastAPI, ElevenLabs, Context7, Claude, AWS',
+      description:
+        'AI-powered visual tutor that provides on-demand voice-narrated videos to explain math and computer science-related concepts.',
+      icon: 'fas fa-eye',
+      url: 'https://github.com/nathanaronson/videre',
+      items: [
+        'User query passed through custom Claude prompt enhanced with Context7 -> Manim code + voice generation -> MP4 generated -> uploaded to S3 bucket and saved to MongoDB for history.',
+        'HackPrinceton Fall 2025 submission for Education Track.',
+      ],
+    },
+    {
+      id: 3,
+      title: 'Penn Mobile',
+      role: 'iOS Engineer',
+      tech: 'Swift, SwiftUI, UIKit, AlarmKit, LiveActivities, WidgetKit',
+      description:
+        'Maintaining and developing new features for mobile application that serves 10,000 students monthly.',
+      icon: 'fas fa-mobile-alt',
+      url: 'https://github.com/pennlabs/penn-mobile-ios',
+      items: [
+        'Spearheaded a complete refactor of core laundry feature, modernizing from UIKit to SwiftUI.',
+        'Integrated ActivityKit and WidgetKit for a particular machine usage, and AlarmKit to notify when ready.',
+      ],
+    },
+    {
+      id: 4,
       title: 'Apartment Rent Prediction and Classification',
       role: 'Data Scientist & ML Engineer',
       tech: 'Python, Pandas, Sklearn, PyTorch, NumPy',
@@ -32,7 +74,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 2,
+      id: 5,
       title: 'Ultimate Tic-Tac-Toe & AI',
       role: 'Software Developer',
       tech: 'Java, JSwing',
@@ -46,7 +88,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 3,
+      id: 6,
       title: 'WaterWatch',
       role: 'iOS Developer',
       tech: 'Swift, SwiftUI, WidgetKit',
@@ -60,7 +102,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 4,
+      id: 7,
       title: 'ThermaHax',
       role: 'Hardware Engineer & Embedded Systems Developer',
       tech: 'Arduino, C++',
@@ -74,7 +116,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 5,
+      id: 8,
       title: 'Discord Bots',
       role: 'Software Developer',
       tech: 'Python, Discord.py',

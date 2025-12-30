@@ -190,7 +190,7 @@ h6 {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   opacity: 0;
   transform: translateX(-100px);
-  animation: slideInLeft 1.2s ease forwards 4.5s;
+  animation: slideInLeft 1.2s ease forwards 2.25s;
 }
 @keyframes slideInLeft {
   to {
@@ -278,7 +278,7 @@ h6 {
   gap: 1.5rem;
   opacity: 0;
   transform: translateX(100px);
-  animation: slideInRight 1.2s ease forwards 4.8s;
+  animation: slideInRight 1.2s ease forwards 2.4s;
   margin-top: 4rem;
 }
 @keyframes slideInRight {
@@ -312,7 +312,7 @@ h6 {
   display: flex;
   justify-content: center;
   opacity: 0;
-  animation: fadeIn 1s ease forwards 4.2s;
+  animation: fadeIn 1s ease forwards 2.1s;
   cursor: pointer;
 }
 .scroll-indicator i {

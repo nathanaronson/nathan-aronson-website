@@ -60,6 +60,6 @@ find ~/html -type f -exec chmod 644 {} \;
 
 After these steps, your website should be up to date at:
 
-```
+```text
 http://www.seas.upenn.edu/~narons/
 ```

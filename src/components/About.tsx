@@ -40,16 +40,16 @@ const About = () => {
             Engineering and Applied Science.
           </p>
           <p>
-            I have a <strong>strong algorithmic background</strong> and chase{' '}
-            <strong>hard problems</strong>. In college, I push myself{' '}
-            <span className="underline">as deeply as possible</span> into almost
-            every corner of computer science.
+            I have a <strong>strong engineering background</strong> and chase{' '}
+            <strong>hard problems</strong>. In college, I{' '}
+            <span className="underline">push myself</span> in various corners of
+            computer science: systems programming, machine learning, iOS
+            development.
           </p>
           <p>
-            I've managed 2 development teams and led multiple projects, and I
-            have a strong understanding of the entire software development
-            lifecycle. Currently, my interests lie in low-latency programming,
-            iOS development, and quantitative finance.
+            I've led multiple projects, and I have a strong understanding of the
+            software development lifecycle. Currently, I'm exploring compilers
+            by implementing a programming language in Rust.
           </p>
         </div>
       </div>
