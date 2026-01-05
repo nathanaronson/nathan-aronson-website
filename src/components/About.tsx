@@ -42,14 +42,14 @@ const About = () => {
           <p>
             I have a <strong>strong engineering background</strong> and chase{' '}
             <strong>hard problems</strong>. In college, I{' '}
-            <span className="underline">push myself</span> across diverse areas of
-            computer science, including systems programming, machine learning, iOS
-            development.
+            <span className="underline">push myself</span> across diverse areas
+            of computer science, including systems programming, machine
+            learning, iOS development.
           </p>
           <p>
-            I've led multiple projects and have a solid grasp of the
-            full software development lifecycle. Currently, I'm diving into compiler design
-            by building a programming language in Rust.
+            I've led multiple projects and have a solid grasp of the full
+            software development lifecycle. Currently, I'm diving into compiler
+            design by building a programming language in Rust.
           </p>
         </div>
       </div>
