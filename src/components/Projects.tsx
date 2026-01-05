@@ -23,7 +23,7 @@ const Projects = () => {
       role: 'Systems Engineer',
       tech: 'Rust',
       description:
-        'Bytecode-compiled programming language with virtual machine.',
+        'Bytecode-compiled programming language with stack-based virtual machine interpreter.',
       icon: 'fas fa-code',
       url: 'https://github.com/nathanaronson/arc',
       items: [
@@ -41,7 +41,7 @@ const Projects = () => {
       icon: 'fas fa-eye',
       url: 'https://github.com/nathanaronson/videre',
       items: [
-        'User query passed through custom Claude prompt enhanced with Context7 -> Manim code + voice generation -> MP4 generated -> uploaded to S3 bucket and saved to MongoDB for history.',
+        'User query passed through custom Claude prompt enhanced with Context7 -> Manim code + voiceover -> MP4 generated -> uploaded to S3 bucket and saved to MongoDB for history.',
         'HackPrinceton Fall 2025 submission for Education Track.',
       ],
     },
@@ -49,7 +49,7 @@ const Projects = () => {
       id: 3,
       title: 'Penn Mobile',
       role: 'iOS Engineer',
-      tech: 'Swift, SwiftUI, UIKit, AlarmKit, LiveActivities, WidgetKit',
+      tech: 'Swift, SwiftUI, UIKit, AlarmKit, ActivityKit, WidgetKit',
       description:
         'Maintaining and developing new features for mobile application that serves 10,000 students monthly.',
       icon: 'fas fa-mobile-alt',
