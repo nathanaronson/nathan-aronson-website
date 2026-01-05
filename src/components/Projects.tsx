@@ -35,7 +35,7 @@ const Projects = () => {
       id: 2,
       title: 'Videre',
       role: 'Education & ML Engineer',
-      tech: 'Python, TypeScript, React, Tailwind, MongoDB, Manim, FastAPI, ElevenLabs, Context7, Claude, AWS',
+      tech: 'Python, TypeScript, React, Tailwind, MongoDB, Manim, FastAPI, ElevenLabs, Context7, Claude API, AWS',
       description:
         'AI-powered visual tutor that provides on-demand voice-narrated videos to explain math and computer science-related concepts.',
       icon: 'fas fa-eye',
