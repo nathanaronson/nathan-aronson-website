@@ -44,7 +44,7 @@ const About = () => {
             <strong>hard problems</strong>. In college, I{' '}
             <span className="underline">push myself</span> across diverse areas
             of computer science, including systems programming, machine
-            learning, iOS development.
+            learning, and iOS development.
           </p>
           <p>
             I've led multiple projects and have a solid grasp of the full
