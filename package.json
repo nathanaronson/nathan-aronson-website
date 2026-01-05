@@ -12,12 +12,12 @@
     "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,css,html}\""
   },
   "dependencies": {
-    "react": "^18.2.0",
+    "react": "^19.2.3",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
-    "@types/react": "^18.2.43",
+    "@types/react": "^19.2.7",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
     "prettier": "^3.7.4",
