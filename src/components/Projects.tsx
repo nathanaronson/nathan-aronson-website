@@ -28,7 +28,7 @@ const Projects = () => {
       url: 'https://github.com/nathanaronson/arc',
       items: [
         'Implemented dynamically-typed programming language in Rust with Pratt parsing.',
-        'Supports variables, scoping, control flow, functions, classes, inheritance, and multiple types.',
+        'Supports variables, scoping, control flow, functions, and multiple types.',
       ],
     },
     {
