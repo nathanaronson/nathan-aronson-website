@@ -24,6 +24,18 @@ const Experiences = () => {
   const experiencesData: Experience[] = [
     {
       id: 1,
+      title: 'CIS 1905 Teaching Assistant',
+      location: 'University of Pennsylvania',
+      date: 'January 2026 - Present',
+      image: pennImage,
+      alt: 'University of Pennsylvania',
+      skills: ['Rust'],
+      items: [
+        'Holding office hours, grading homework, and reinforcing key concepts in Rust programming.',
+      ],
+    },
+    {
+      id: 2,
       title: 'iOS Mobile Engineer',
       location: 'Penn Labs',
       date: 'September 2025 - Present',
@@ -36,7 +48,7 @@ const Experiences = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: 'Lead Quantitative Engineer',
       location: 'Astera Holdings',
       date: 'June 2025 - August 2025',
@@ -49,7 +61,7 @@ const Experiences = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: 'Software Engineer Intern',
       location: 'Burns Engineering',
       date: 'May 2025 - August 2025',
@@ -62,33 +74,33 @@ const Experiences = () => {
       ],
     },
     {
-      id: 4,
-      title: 'Teaching Assistant',
+      id: 5,
+      title: 'CIS 1200 Teaching Assistant',
       location: 'University of Pennsylvania',
       date: 'January 2025 - Present',
       image: pennImage,
       alt: 'University of Pennsylvania',
-      skills: ['OCaml', 'Java'],
+      skills: ['OCaml', 'Java', 'LaTeX'],
       items: [
-        'CIS 1200: Programming Languages and Techniques I',
-        'Leading weekly recitation, holding office hours, grading homework, and reinforcing key concepts in functional and object-oriented programming.',
+        'Leading committee to ideate and typeset exam questions.',
+        'Hosting weekly recitation, holding office hours, grading homework, and reinforcing key concepts in functional and object-oriented programming.',
       ],
     },
     {
-      id: 5,
+      id: 6,
       title: 'Software Engineer',
       location: 'Penn Electric Racing',
-      date: 'September 2024 - Present',
+      date: 'September 2024 - May 2025',
       image: perImage,
       alt: 'Penn Electric Racing',
       skills: ['C++', 'Python', 'Rust', 'Altium Designer'],
       items: [
         'Electrical Subteam',
-        'Spearheading embedded board debugging and improving quasi-static vehicle simulation.',
+        'Spearheaded embedded board debugging and improved quasi-static vehicle simulation.',
       ],
     },
     {
-      id: 6,
+      id: 7,
       title: 'President',
       location: 'FRC Team 1712',
       date: 'September 2021 - June 2024',
@@ -101,7 +113,7 @@ const Experiences = () => {
       ],
     },
     {
-      id: 7,
+      id: 8,
       title: 'Director',
       location: 'CodeLM',
       date: 'September 2020 - June 2024',
