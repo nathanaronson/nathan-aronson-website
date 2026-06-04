@@ -23,19 +23,19 @@ const Experiences = () => {
 
   const experiencesData: Experience[] = [
     {
-      id: 1,
+      id: 0,
       title: 'CIS 1905 Teaching Assistant',
       location: 'University of Pennsylvania',
-      date: 'January 2026 - Present',
+      date: 'January 2026 - May 2026',
       image: pennImage,
       alt: 'University of Pennsylvania',
       skills: ['Rust'],
       items: [
-        'Holding office hours, grading homework, and reinforcing key concepts in Rust programming.',
+        'Held office hours, graded homework, and reinforced key concepts in Rust programming.',
       ],
     },
     {
-      id: 2,
+      id: 1,
       title: 'iOS Mobile Engineer',
       location: 'Penn Labs',
       date: 'September 2025 - Present',
@@ -48,7 +48,7 @@ const Experiences = () => {
       ],
     },
     {
-      id: 3,
+      id: 2,
       title: 'Lead Quantitative Engineer',
       location: 'Astera Holdings',
       date: 'June 2025 - August 2025',
@@ -61,7 +61,7 @@ const Experiences = () => {
       ],
     },
     {
-      id: 4,
+      id: 3,
       title: 'Software Engineer Intern',
       location: 'Burns Engineering',
       date: 'May 2025 - August 2025',
@@ -74,20 +74,20 @@ const Experiences = () => {
       ],
     },
     {
-      id: 5,
-      title: 'CIS 1200 Teaching Assistant',
+      id: 4,
+      title: 'CIS 1200 Head Teaching Assistant',
       location: 'University of Pennsylvania',
       date: 'January 2025 - Present',
       image: pennImage,
       alt: 'University of Pennsylvania',
       skills: ['OCaml', 'Java', 'LaTeX'],
       items: [
-        'Leading committee to ideate and typeset exam questions.',
-        'Hosting weekly recitation, holding office hours, grading homework, and reinforcing key concepts in functional and object-oriented programming.',
+        'Teaching Assistant (Jan 2025) → Exam Committee Head (Jan 2026) → Head Teaching Assistant (May 2026)',
+        'Managing a staff of 30 teaching assistants and lead weekly recitation, holding office hours, grading homework, and reinforcing key concepts in functional and object-oriented programming.',
       ],
     },
     {
-      id: 6,
+      id: 5,
       title: 'Software Engineer',
       location: 'Penn Electric Racing',
       date: 'September 2024 - May 2025',
@@ -100,7 +100,7 @@ const Experiences = () => {
       ],
     },
     {
-      id: 7,
+      id: 6,
       title: 'President',
       location: 'FRC Team 1712',
       date: 'September 2021 - June 2024',
@@ -113,7 +113,7 @@ const Experiences = () => {
       ],
     },
     {
-      id: 8,
+      id: 7,
       title: 'Director',
       location: 'CodeLM',
       date: 'September 2020 - June 2024',

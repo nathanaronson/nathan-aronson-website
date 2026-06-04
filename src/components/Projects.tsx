@@ -19,6 +19,48 @@ const Projects = () => {
   const projectsData: ProjectItem[] = [
     {
       id: 1,
+      title: 'dploy',
+      role: 'Full-Stack & Agent Engineer',
+      tech: 'React, Ink, FastAPI, OpenClaw, Modal, Tailwind, Claude/Gemini Agents',
+      description:
+        'CLI and web app that takes any repository (CLI or full stack) and delegates two agents to build it inside a Modal sandbox, and exposes it to the internet via a live URL.',
+      icon: 'fas fa-rocket',
+      url: 'https://github.com/nathanaronson/dploy',
+      items: [
+        'Drives a planning agent to provision, and a builder agent to deploy arbitrary repositories with no manual configuration.',
+        'Tuned OpenClaw optimizations to reach sub-minute deployment times for supported repositories.',
+      ],
+    },
+    {
+      id: 2,
+      title: 'Darwin — 2nd Place, Cubist Hackathon 2026',
+      role: '2nd Place Winner, Cubist Hackathon Spring 2026',
+      tech: 'React, FastAPI, Modal, Tailwind, Claude/Gemini Agents',
+      description:
+        'Evolutionary chess engine that generates new strategies, assigns agents to develop competing variants, and pits them against each other to crown the next base model.',
+      icon: 'fas fa-chess',
+      url: 'https://github.com/nathanaronson/darwin',
+      items: [
+        'Orchestrator agent proposes 16 strategies each generation, spinning up flash agents to implement and refine competing variants.',
+        'Runs round-robin tournaments in parallel across a distributed network of Modal sandboxes to select the strongest model.',
+      ],
+    },
+    {
+      id: 3,
+      title: 'Unix-like Operating System',
+      role: 'Systems Engineer',
+      tech: 'C',
+      description:
+        'A Unix-like operating system including a kernel, bootloader, file system, and shell.',
+      icon: 'fas fa-terminal',
+      url: 'https://github.com/nathanaronson',
+      items: [
+        'Architected a FAT-16 file system with directory, block, and I/O helpers, plus kernel calls exposed to shell routines.',
+        'Built a shell supporting multi-stage pipelines, I/O redirection, and signal handling to prevent race conditions.',
+      ],
+    },
+    {
+      id: 4,
       title: 'Arc - Programming Language',
       role: 'Systems Engineer',
       tech: 'Rust',
@@ -32,7 +74,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 2,
+      id: 5,
       title: 'Videre',
       role: 'Education & ML Engineer',
       tech: 'Python, TypeScript, React, Tailwind, MongoDB, Manim, FastAPI, ElevenLabs, Context7, Claude API, AWS',
@@ -46,7 +88,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 3,
+      id: 6,
       title: 'Penn Mobile',
       role: 'iOS Engineer',
       tech: 'Swift, SwiftUI, UIKit, AlarmKit, ActivityKit, WidgetKit',
@@ -60,7 +102,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 4,
+      id: 7,
       title: 'Apartment Rent Prediction and Classification',
       role: 'Data Scientist & ML Engineer',
       tech: 'Python, Pandas, Sklearn, PyTorch, NumPy',
@@ -74,7 +116,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 5,
+      id: 8,
       title: 'Ultimate Tic-Tac-Toe & AI',
       role: 'Software Developer',
       tech: 'Java, JSwing',
@@ -88,7 +130,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 6,
+      id: 9,
       title: 'WaterWatch',
       role: 'iOS Developer',
       tech: 'Swift, SwiftUI, WidgetKit',
@@ -102,7 +144,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 7,
+      id: 10,
       title: 'ThermaHax',
       role: 'Hardware Engineer & Embedded Systems Developer',
       tech: 'Arduino, C++',
@@ -116,7 +158,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 8,
+      id: 11,
       title: 'Discord Bots',
       role: 'Software Developer',
       tech: 'Python, Discord.py',
