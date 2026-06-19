@@ -50,10 +50,6 @@ npm run lint -- --max-warnings 0   # ESLint — must pass with zero warnings
 - **Design language:** dark minimalist — `#181818` background, white/gray text. Section headings are lowercase with a trailing period (`projects.`, `experiences.`). Keep new UI consistent with this.
 - **Animations:** prefer pure CSS for hover/transition effects (e.g. the project title underline draws via a `::after` `scaleX` transition). Add a `prefers-reduced-motion: reduce` rule for any new motion. Note: scroll-reveal animations on `main` use hand-rolled `IntersectionObserver`; a separate `animation-redesign` branch explores migrating these to the `motion` library but is **not merged** — don't assume `motion` is available on `main`.
 
-## Design docs
-
-`docs/superpowers/specs/` and `docs/superpowers/plans/` hold design specs and implementation plans for larger changes (written via the Superpowers brainstorming → planning workflow). Worth reading for context before reworking animations.
-
 ## Deployment
 
 `npm run build`, then deploy the `dist/` folder to a static host. No CI deploy step — it's manual.
