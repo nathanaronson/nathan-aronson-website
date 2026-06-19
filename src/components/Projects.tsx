@@ -47,11 +47,11 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Unix-like Operating System',
+      title: 'UNIX-like Operating System',
       role: 'Systems Engineer',
       tech: 'C',
       description:
-        'A Unix-like operating system including a kernel, bootloader, file system, and shell.',
+        'A UNIX-like operating system including a kernel, bootloader, file system, and shell.',
       icon: 'fas fa-terminal',
       url: 'https://github.com/nathanaronson',
       items: [
