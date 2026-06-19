@@ -28,5 +28,5 @@ jobs:
     - name: TypeScript type checking
       run: npx tsc --noEmit
     
-    - name: Check for ESLint (if configured)
-      run: npx eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0 || echo "ESLint not configured"
+    - name: ESLint
+      run: npm run lint -- --max-warnings 0
