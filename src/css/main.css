@@ -835,7 +835,6 @@ h6 {
   }
   .project-title-link:hover {
     color: #cccccc;
-    text-decoration: underline;
   }
   body {
     background-color: #2a2a2a;
@@ -966,7 +965,6 @@ h6 {
   }
   .project-title-link:hover {
     color: #cccccc;
-    text-decoration: underline;
   }
   .experiences-container {
     padding-left: 2rem;
