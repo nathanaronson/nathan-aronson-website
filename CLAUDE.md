@@ -11,24 +11,26 @@ Nathan Aronson's personal portfolio website — a single-page React app. Live at
 - **React 18** + **TypeScript 5**, built with **Vite 5**
 - Plain **CSS3** — all styles live in one file, `src/css/main.css` (no CSS modules, no Tailwind, no CSS-in-JS)
 - **Font Awesome** (icons) and **Google Fonts**, loaded via `index.html`
-- **Prettier** for formatting. No ESLint config, no test framework.
+- **Prettier** for formatting, **ESLint** (flat config, `eslint.config.js`) for linting. No test framework.
 
 ## Commands
 
 - `npm run dev` — Vite dev server
 - `npm run build` — production build to `dist/`
 - `npm run preview` — preview the production build
+- `npm run lint` — ESLint across the repo
 - `npm run format` — Prettier write across `src/**`
 - `npm run format:check` — Prettier check (CI-enforced)
 
 ## Verification gate (run before committing)
 
-There is no test suite. CI (`.github/workflows/`) gates every push/PR on these three — run all three locally before committing:
+There is no test suite. CI (`.github/workflows/`) gates every push/PR on these four — run all four locally before committing:
 
 ```bash
-npm run build          # must succeed
-npm run format:check   # must pass (run `npm run format` to fix)
-npx tsc --noEmit       # type check — must pass
+npm run build              # must succeed
+npm run format:check       # must pass (run `npm run format` to fix)
+npx tsc --noEmit           # type check — must pass
+npm run lint -- --max-warnings 0   # ESLint — must pass with zero warnings
 ```
 
 `npx tsc --noEmit` is easy to forget because `vite build` can succeed while types are wrong. Don't skip it.
