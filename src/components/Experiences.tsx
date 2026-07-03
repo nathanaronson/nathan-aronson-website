@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import arcesiumImage from '../assets/arcesium.png';
 import asteraImage from '../assets/astera.png';
 import burnsImage from '../assets/burns.png';
 import pennImage from '../assets/penn.png';
@@ -22,6 +23,16 @@ const Experiences = () => {
   const experiencesRef = useRef<HTMLDivElement>(null);
 
   const experiencesData: Experience[] = [
+    {
+      id: 8,
+      title: 'Software Engineer Intern',
+      location: 'Arcesium',
+      date: 'June 2026 - Present',
+      image: arcesiumImage,
+      alt: 'Arcesium',
+      skills: [''],
+      items: ['Summer 2026'],
+    },
     {
       id: 0,
       title: 'CIS 1905 Teaching Assistant',

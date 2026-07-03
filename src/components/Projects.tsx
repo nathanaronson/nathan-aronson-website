@@ -67,7 +67,7 @@ const Projects = () => {
       description:
         'Bytecode-compiled programming language with stack-based virtual machine interpreter.',
       icon: 'fas fa-code',
-      url: 'https://github.com/nathanaronson/arc',
+      url: 'https://www.seas.upenn.edu/~narons/arc/',
       items: [
         'Implemented dynamically-typed programming language in Rust with Pratt parsing.',
         'Supports variables, scoping, control flow, functions, and multiple types.',

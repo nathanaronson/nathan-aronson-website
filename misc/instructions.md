@@ -16,12 +16,10 @@ ssh narons@eniac.seas.upenn.edu
 cd ~/html
 ```
 
-## 3. Remove all existing contents (inside SSH)
-
-> Warning: This deletes all files in `html/`. Ensure you have backups if needed.
+## 3. Remove existing contents (inside SSH)
 
 ```bash
-rm -r ./*
+rm -r index.html logo.png assets
 ```
 
 ## 4. Build your website locally
