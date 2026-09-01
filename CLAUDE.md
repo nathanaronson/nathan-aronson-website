@@ -4,7 +4,7 @@ Project-specific guidance for Claude Code. The user's global `~/.claude/CLAUDE.m
 
 ## What this is
 
-Nathan Aronson's personal portfolio website — a single-page React app. Live at <https://www.seas.upenn.edu/~narons/>. Static build, no backend.
+Nathan Aronson's personal portfolio website — a single-page React app. Live at <https://www.engineering.upenn.edu/~narons/>. Static build, no backend.
 
 ## Stack
 

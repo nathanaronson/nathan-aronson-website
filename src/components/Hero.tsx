@@ -27,7 +27,7 @@ const Hero = () => {
       label: 'GitHub',
     },
     {
-      href: 'mailto:narons@seas.upenn.edu',
+      href: 'mailto:narons@engineering.upenn.edu',
       icon: 'fas fa-envelope',
       label: 'Email',
     },

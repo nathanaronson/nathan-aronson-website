@@ -1,6 +1,6 @@
 # Nathan Aronson – Personal Website
 
-Live: [seas.upenn.edu/~narons/](https://seas.upenn.edu/~narons/)
+Live: [engineering.upenn.edu/~narons/](https://engineering.upenn.edu/~narons/)
 
 ## Tech Stack
 

@@ -27,11 +27,14 @@ const Experiences = () => {
       id: 8,
       title: 'Software Engineer Intern',
       location: 'Arcesium',
-      date: 'June 2026 - Present',
+      date: 'June 2026 - August 2026',
       image: arcesiumImage,
       alt: 'Arcesium',
-      skills: [''],
-      items: ['Summer 2026'],
+      skills: ['Python, Kotlin'],
+      items: [
+        'Transaction and Reference Data Team',
+        'Rebuild position & P&L statements from on-chain data and parallelized a trade syncer.',
+      ],
     },
     {
       id: 0,

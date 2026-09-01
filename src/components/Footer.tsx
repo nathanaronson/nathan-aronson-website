@@ -14,7 +14,7 @@ const Footer = () => {
       label: 'GitHub',
     },
     {
-      href: 'mailto:narons@seas.upenn.edu',
+      href: 'mailto:narons@engineering.upenn.edu',
       label: 'Email',
     },
   ];
