@@ -67,7 +67,7 @@ body {
       transparent 6%
     );
   background-repeat: no-repeat;
-  background-size: 100% 900vh;
+  background-size: 100% max(900vh, 100%);
   background-attachment: scroll;
 }
 .container {

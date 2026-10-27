@@ -6,6 +6,7 @@ import pennImage from '../assets/penn.png';
 import perImage from '../assets/per.png';
 import codelmImage from '../assets/codelm.png';
 import firstImage from '../assets/first.png';
+import imcImage from '../assets/imc.png';
 import labsImage from '../assets/labs.png';
 
 interface Experience {
@@ -23,6 +24,16 @@ const Experiences = () => {
   const experiencesRef = useRef<HTMLDivElement>(null);
 
   const experiencesData: Experience[] = [
+    {
+      id: 9,
+      title: 'Software Engineer Intern',
+      location: 'IMC Trading',
+      date: 'October 2026 - Present',
+      image: imcImage,
+      alt: 'IMC Trading',
+      skills: [''],
+      items: ['Incoming Summer 2027'],
+    },
     {
       id: 8,
       title: 'Software Engineer Intern',
