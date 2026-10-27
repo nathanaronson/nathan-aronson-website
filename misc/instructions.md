@@ -7,7 +7,7 @@ This guide is a personal reference because of how tedious it is to host the webs
 ## 1. Connect to ENIAC via SSH
 
 ```bash
-ssh narons@eniac.engineering.upenn.edu
+ssh narons@eniac.seas.upenn.edu
 ```
 
 ## 2. Navigate to the `html/` folder (inside SSH)
@@ -39,7 +39,7 @@ cd dist
 ## 6. Upload the new contents to ENIAC
 
 ```bash
-scp -r . narons@eniac.engineering.upenn.edu:html/
+scp -r . narons@eniac.seas.upenn.edu:html/
 ```
 
 ## 7. Set proper permissions for Apache (inside SSH)
