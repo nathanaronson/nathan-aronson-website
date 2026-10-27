@@ -1,6 +1,6 @@
 # Steps to Update Website on ENIAC
 
-This guide is a personal reference because of how tedious it is to host the website on the ENIAC (there's no way I'd remember the workflow). Oh, what we do for free hosting...
+This guide is a personal reference because of how tedious it is to host the website on the ENIAC (there's no way I'd remember the workflow).
 
 ---
 
